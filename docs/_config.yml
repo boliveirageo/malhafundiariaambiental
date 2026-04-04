@@ -1,0 +1,16 @@
+theme: 
+	jekyll-theme-cayman
+title: 
+	Malha Fundiária Ambiental
+
+description: 
+	Neste site traz as informações da metodologia aplicada para construção de uma malha fundiária com informações de ativos ambientais (Reserva Legal e APP)
+
+nav:
+    - Home: index.md
+    - Fluxograma de processo: fluxo
+    - Ingestão dos dados: etapa1.md
+    - Pre-processamento: etapa2.md
+    - Conversão para Raster: etapa3.md
+    - Integração da malha fundiária: etapa4.md
+    - Criação da Malha Fundiária Ambiental:etapa5.md
