@@ -1,9 +1,3 @@
----
-layout: default
-title: Ingestão de dados
-nav_order: 3
----
-
 # Ingetão dos Dados 
 
 ## Sobre
