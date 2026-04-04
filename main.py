@@ -29,8 +29,16 @@ Processing.initialize() # <--- ESTA LINHA É A QUE RESOLVE O ERRO
 # 4. Adicionar os algoritmos nativos
 QgsApplication.processingRegistry().addProvider(QgsNativeAlgorithms())
 
+#--------------------------------------------------------------------------------------------------------------------------------Parâmetros------------------------------------------------------------------------------------------------------------------------                                               
+folder = input('Digite a pasta de entrada dos arquivos:')
+outfolder = input('Digite a pasta de saida dos arquivos de máscara binária das malhas fundiárias:')
+path_output_mask = input('Digite a pasta de saida dos arquivos de máscara binária das malhas fundiárias após hierarquia:')
+folder_output_ia= input('Digite a pasta de saida dos arquivos quantidade de sobreposição , mapa final hierarquizado (raster e vetor) :')
+caminho_apps = input('Arquivo área de preservação permanente:')
+caminho_rl = input('Arquivo da reserva legal:')
+fieldCodigoMalha = input('Digite o nome do atributo do códugo da malha')#'cod_malha'
 
-# --- CONFIGURAÇÃO ---
+# --- ---------------------------------------------------------------------------------------------------------------------------CONFIGURAÇÃO ---------------------------------------------------------------------------------------------------------------
 ordem_prioridade = [
                     {'order':'1', 'src':'01_tih.shp'},
                     {'order':'2', 'src':'02_ucpi.shp'},
@@ -48,32 +56,24 @@ ordem_prioridade = [
 ]
 
 ordem_prioridade_ia = [
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/hierarquia_vetor/mask/00_ma.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/hierarquia_vetor/mask/00_mancha_urbana.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_01_tih.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_02_ucpi.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_03_am.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_04_incra_result_corrigido.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_05_asse.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_06_fnpd.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_07_ucus.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_09_tqd.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_10_tinh.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_11_tqnd.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_13_carss_v3.shp',
-                    'C:/Users/XXXX/Documents/Projetos/MalhaFundiaria/datasets/raster/expression_mask/selected_mask_14_carcs_v3.shp',
+                   folder + '00_ma.shp',
+                   folder + '00_mancha_urbana.shp',
+                   path_output_mask + 'selected_mask_01_tih.shp',
+                   path_output_mask + 'selected_mask_02_ucpi.shp',
+                   path_output_mask + 'selected_mask_03_am.shp',
+                   path_output_mask + 'selected_mask_04_incra_result_corrigido.shp',
+                   path_output_mask + 'selected_mask_05_asse.shp',
+                   path_output_mask + 'selected_mask_06_fnpd.shp',
+                   path_output_mask + 'selected_mask_07_ucus.shp',
+                   path_output_mask + 'selected_mask_09_tqd.shp',
+                   path_output_mask + 'selected_mask_10_tinh.shp',
+                   path_output_mask + 'selected_mask_11_tqnd.shp',
+                   path_output_mask + 'selected_mask_13_carss_v3.shp',
+                   path_output_mask + 'selected_mask_14_carcs_v3.shp',
 ]
-        
-#Parâmetros de entrada e saida                                              
-folder = input('Digite a pasta de entrada dos arquivos:')
-outfolder = input('Digite a pasta de saida dos arquivos de máscara binária das malhas fundiárias:')
-path_output_mask = input('Digite a pasta de saida dos arquivos de máscara binária das malhas fundiárias após hierarquia:')
-folder_output_ia= input('Digite a pasta de saida dos arquivos da quantidade de sobreposição e mapa final hierarquizado (raster):')'
-caminho_malha = input('Digite a saida do arquivo da malha fundiaria')
-caminho_rl = input('Arquivo da reserva legal:')
-fieldCodigoMalha = input('Digite o nome do atributo do códugo da malha')
 
-#Processando as imagens
+
+#----------------------------------------------------------------------------------------------------------------------------------Inicio do  Processamento--------------------------------------------------------------------------------------------------------
 #Convertendo os vetores em imagens
 pr.processRaster(folder,ordem_prioridade,outfolder)
 time.sleep(20)
@@ -87,11 +87,11 @@ pr.selectedFeature(outfolder,folder,ordem_prioridade,path_output_mask)
 time.sleep(20)
 
 #Integração de malha fundiárias
-ia.processar_recorte_prioritario(ordem_prioridade_ia, folder_output_ia)
+mfa = ia.processar_recorte_prioritario(ordem_prioridade_ia, folder_output_ia)
 time.sleep(20)
 
 #Pre-processamento dos ativos
-iap.integrar_apps_na_malha_completo(caminho_malha, caminho_apps, caminho_rl,folder_output_ia,fieldCodigoMalha)
+iap.integrar_apps_na_malha_completo(mfa, caminho_apps, caminho_rl,folder_output_ia,fieldCodigoMalha)
 time.sleep(20)
 
 #Finalização Limpa

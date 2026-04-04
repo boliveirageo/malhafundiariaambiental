@@ -111,7 +111,7 @@ def processar_recorte_prioritario(lista_prioridade, output_folder, area_sliver=1
 
     # 7. Unificação Final
     print("\n--- GERANDO MALHA FINAL UNIFICADA ---")
-    final_output = os.path.join(output_folder, "MALHA_FUNDIARIA_GO_CONSOLIDADA_v3c.shp")#"MALHA_FUNDIARIA_GO_CONSOLIDADA_v3b.gpkg")
+    final_output = os.path.join(output_folder, "MALHA_FUNDIARIA_GO_CONSOLIDADA.shp")
     processing.run("native:mergevectorlayers", {
         'LAYERS': camadas_finais_paths,
         'OUTPUT': final_output
@@ -119,3 +119,4 @@ def processar_recorte_prioritario(lista_prioridade, output_folder, area_sliver=1
     
     print(f"\nPROCESSO FINALIZADO!")
     print(f"Arquivo final: {final_output}")
+    return final_output
