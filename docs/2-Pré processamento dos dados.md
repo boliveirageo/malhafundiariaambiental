@@ -1,3 +1,9 @@
+---
+layout: default
+title: Pré-processamento dos dados
+nav_order: 2
+---
+
 # Pre-processamento dos dados 
 
 ## Sobre
