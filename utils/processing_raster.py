@@ -1,10 +1,14 @@
+#Importar módulos
+from qgis import processing
+import subprocess
+
 # Configuração do Ambiente Standalone
 qgis_prefix = r'C:\Program Files\QGIS 3.xx\apps\qgis'
 gdal_prefix = r'C:\\Program Files\\QGIS 3.44.4\\bin\\'
 
+
 def processRaster(folderIn,listData,folderOut):
-    import subprocess
-    
+       
     for i in listData:
         #Valor do pixel de cada Imagem
         valuepixel = i['order']
@@ -120,3 +124,4 @@ def selectedFeature(path_raster, path_vetor, ordem_prioridade, path_output):
         # Limpeza de memória
         del fix_geo
         del zonal_layer    
+

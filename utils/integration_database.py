@@ -1,3 +1,6 @@
+#Importar módulos
+from qgis import processing
+
 def preparar_camada(camada, label_fonte):
     """
     Remove TODOS os campos exceto os essenciais e adiciona/atualiza a fonte_origem.
@@ -22,9 +25,9 @@ def preparar_camada(camada, label_fonte):
     if indices_para_excluir:
         camada.deleteAttributes(indices_para_excluir)
         camada.updateFields() # Atualiza a estrutura interna após deletar
-           
-    camada.commitChanges()
     
+       
+    camada.commitChanges()
     print(f"   -> Limpeza concluída: Apenas campos essenciais mantidos em {label_fonte}.")
 
 def filtrar_invalidos(input_path, output_path):
@@ -45,6 +48,7 @@ def remover_slivers(input_path, output_path, area_minima=5.0):
     })
 
 def processar_recorte_prioritario(lista_prioridade, output_folder, area_sliver=1.0):
+    from qgis.core import  QgsProject, QgsVectorLayer, QgsFeatureRequest, QgsFeature, QgsApplication,QgsDataSourceUri, QgsSpatialIndex,QgsGeometry,QgsField
     import os
 
     print("--- INICIANDO PROCESSAMENTO HIERÁRQUICO ---")
@@ -111,7 +115,7 @@ def processar_recorte_prioritario(lista_prioridade, output_folder, area_sliver=1
 
     # 7. Unificação Final
     print("\n--- GERANDO MALHA FINAL UNIFICADA ---")
-    final_output = os.path.join(output_folder, "MALHA_FUNDIARIA_GO_CONSOLIDADA.shp")
+    final_output = os.path.join(output_folder, "MALHA_FUNDIARIA_GO_CONSOLIDADA_v3c.shp")#"MALHA_FUNDIARIA_GO_CONSOLIDADA_v3b.gpkg")
     processing.run("native:mergevectorlayers", {
         'LAYERS': camadas_finais_paths,
         'OUTPUT': final_output

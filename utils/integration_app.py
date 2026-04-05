@@ -1,5 +1,9 @@
+#Importar módulos
+from qgis import processing
+
 def integrar_apps_na_malha_completo(path_malha, path_apps, path_rl, path_output,campo_id_imovel):
-    print("Iniciando processamento integrado...")
+    from qgis.core import  QgsProject, QgsVectorLayer, QgsFeatureRequest, QgsFeature, QgsApplication,QgsDataSourceUri, QgsSpatialIndex,QgsGeometry,QgsField
+    print("Iniciando processamento integrado com APP...")
     
     # Carregar camadas
     lyr_malha = QgsVectorLayer(path_malha, "Malha", "ogr")
@@ -18,18 +22,18 @@ def integrar_apps_na_malha_completo(path_malha, path_apps, path_rl, path_output,
 
     # 2. Prioridade APP: Remover áreas de APP de dentro da Reserva Legal
     print("Passo 2: Recortando APP da Reserva Legal (Prioridade APP)...")
-    
+    # Trocando 'memory:' por 'TEMPORARY_OUTPUT' para usar o disco se necessário
     processing.run("native:difference", {
         'INPUT': fix_geo_rl,
         'OVERLAY': fix_geo_app,
-        'OUTPUT': path_output +  '/temp_files/rl_com_clear.gpkg'
+        'OUTPUT': path_output +  '/temp_proc/rl_com_clear.gpkg'
     })['OUTPUT']
 
     # Interseção RL com Malha (Ajustado: fix_malha -> fix_geo_malha)
     processing.run("native:intersection", {
-        'INPUT': path_output +  '/temp_files/rl_com_clear.gpkg',
+        'INPUT': path_output +  '/temp_proc/rl_com_clear.gpkg',
         'OVERLAY': fix_geo_malha,
-        'OUTPUT':  path_output +  '/temp_files/rl_com_id.gpkg'
+        'OUTPUT':  path_output +  '/temp_proc/rl_com_id.gpkg'#'TEMPORARY_OUTPUT'
     })['OUTPUT']
 
     
@@ -38,9 +42,9 @@ def integrar_apps_na_malha_completo(path_malha, path_apps, path_rl, path_output,
     processing.run("native:intersection", {
         'INPUT': fix_geo_app,
         'OVERLAY': fix_geo_malha, 
-        'OUTPUT': path_output +  '/temp_files/app_com_id.gpkg'
-    })['OUTPUT'] 
+        'OUTPUT': path_output +  '/temp_proc/app_com_id.gpkg'#'TEMPORARY_OUTPUT'
+    })['OUTPUT']
     
-  
+   
     print(f"--- SUCESSO ---")
-    
+
