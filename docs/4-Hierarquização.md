@@ -15,7 +15,7 @@ O algoritmo de malha fundiária ambiental é composto por cinco etapas principai
 
 * **4 - Análise de sobreposição fundiária:** Identifica áreas com ou sem conflito. Para áreas com sobreposição, o algoritmo aplica o método multicritério AHP (Processo Hierárquico Analítico) para determinar qual camada deve prevalecer com base em critérios como segurança jurídica e precisão geométrica.
 
-* **5- Integração Ambiental:** Integra os ativos ambientais (como Áreas de Preservação Permanente - APP) à malha fundiária, gerando o produto final consolidado
+* **5 - Integração Ambiental:** Integra os ativos ambientais (como Áreas de Preservação Permanente - APP) à malha fundiária, gerando o produto final consolidado
 
 ** **
 ## Requisito
