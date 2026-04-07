@@ -1,6 +1,19 @@
 site_name: Documentação - Malha Fundiária Ambiental
 site_author: Bernard Silva de Oliveira
-theme: 'readthedocs'
+theme:
+    palette:
+        - scheme: default
+          #   primary: blue
+          #   accent: indigo
+          toggle:
+              icon: material/toggle-switch-off-outline
+              name: Switch to dark mode
+        - scheme: slate
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/toggle-switch
+              name: Switch to light mode
 nav:
 
   - 'HOME': 'index.md'
