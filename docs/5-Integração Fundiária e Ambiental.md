@@ -1,8 +1,3 @@
----
-layout: default
-title: Integracao da Malha Fundiaria e Ambiental
-nav_order: 6
----
 # Integracao da Malha Fundiaria e Ambiental 
 
 ## Sobre
