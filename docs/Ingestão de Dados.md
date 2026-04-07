@@ -4,14 +4,35 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 
 ## Bases de Dados Utilizadas
 
-| Categoria | Fontes de Dados |
+
+#### Grupo: Territórios Sociais e de Proteção
+| Fonte | URL dos Dados |
 | :--- | :--- |
-| **Territórios Sociais e de Proteção** | Terras Indígenas (homologadas e não homologadas), Territórios Quilombolas (declarados e não declarados), Unidades de Conservação (Uso Sustentável e Proteção Integral), Territórios de Proteção, Áreas Militares e Massas d’água . |
-| **Reforma Agrária** | Assentamentos, Glebas Públicas e Florestas Públicas Não Declaradas (FPND) . |
-| **Imóveis Rurais Privados** | SIGEF / SNCI (INCRA) e Cadastro Ambiental Rural (CAR) . |
+| Terras Indígenas (homologadas e não homologadas)||
+| Territórios Quilombolas (declarados e não declarados) ||
+| Unidades de Conservação (Uso Sustentável e Proteção Integral) ||
+| Territórios de Proteção ||
+| Áreas Militares ||
+| Massa d'águas ||
+
+
+#### Grupo: Reforma Agrária
+| Fonte | URL dos Dados |
+| :--- | :--- |
+| Assentamentos ||
+| Glebas Públicas ||
+| Florestas Públicas Não Declaradas (FPND) ||
+
+#### Grupo: Imóveis Rurais Privados
+| Fonte | URL dos Dados |
+| :--- | :--- |
+| SIGEF / SNCI (INCRA) ||
+| Cadastro Ambiental Rural (CAR) ||
+
 
 ## Fluxo de Trabalho
 ![Figura 1 - Fluxograma de Ingestão de Dados](/malhafundiariaambiental/figuras/ingestao_dados.png)
-*Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)* [2].
+
+*Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)*.
   
   
