@@ -1,8 +1,3 @@
----
-layout: default
-title: Conversao de estrutura matricial
-nav_order: 4
----
 # Conversao de estrutura matricial
 
 ## Sobre
