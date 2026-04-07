@@ -1,8 +1,3 @@
----
-layout: default
-title: Hierarquização
-nav_order: 5
----
 # Hierarquização
 
 ## Sobre
