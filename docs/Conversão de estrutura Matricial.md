@@ -1,6 +1,33 @@
 # Conversão de estrutura matricial
 
 ## Sobre
-O material apresenta o desenvolvimento de um algoritmo avançado voltado para a criação de uma malha fundiária ambiental integrada e precisa para o território brasileiro. O processo é estruturado em cinco etapas principais, que abrangem desde a coleta e tratamento de dados brutos até a resolução de conflitos de sobreposição territorial por meio do método multicritério AHP. Essa metodologia transforma registros diversos em um produto geoespacial padronizado, garantindo segurança jurídica e precisão técnica ao classificar áreas como propriedades privadas, terras indígenas e unidades de conservação. Além de fornecer uma visão detalhada dos ativos ambientais, o sistema permite atualizações mensais para apoiar análises territoriais de escala nacional. O objetivo final é oferecer uma ferramenta robusta para a gestão territorial, capaz de identificar com clareza a ocupação do solo e a conformidade ambiental no Brasil.
-** **
-## Etapas Metodológicas
+A conversão matricial (rasterização) é fundamental para permitir a análise de sobreposições em larga escala de forma eficiente.
+
+## Parâmetros de Rasterização
+- **Resolução Espacial:** Pixel de **10 metros**, compatível com escala 1:25.000.
+- **Identificação:** Cada camada recebe um valor de pixel distinto para permitir a diferenciação na álgebra de mapas.
+
+## Tabela de Identificação de Classes (Exemplo Ilustrativo)
+| Classe | Valor do Pixel |
+| :--- | :--- |
+| Massa d'água | 1 |
+| Massa d'água | 2 |
+| Teraa Indígena Homologada | 3 |
+| Unidade de Conservação Proteção Integral | 4 |
+| Área Militar | 5 |
+| Imóvel Privado (SIGEF) | 6 |
+| Assentamento | 7 |
+| Glebas Públicas - FNPD | 8 |
+| Unidade de Conservação de Uso Sustentável | 9 |
+| Glebas Públicas | 10 |
+| Quilombola Declarado | 11 |
+| Terra Indígena Não Homologada | 13 |
+| Quilombola Não Declarado | 14 |
+| CAR (Privado) | 15 e 16 |
+
+
+## Construção da Imagem Multibanda
+As camadas são empilhadas em uma imagem multibanda, onde cada banda corresponde a uma camada fundiária processada [6].
+
+![Figura 5 - Processo de Conversão Matricial](slide_7_image)
+*Referência: Slide 7* [6].

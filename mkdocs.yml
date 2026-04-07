@@ -1,11 +1,12 @@
 site_name: Documentação - Malha Fundiária Ambiental
 site_author: Bernard Silva de Oliveira
-theme: 'readthedocs'
+theme:
+  name: readthedocs
  
 nav:
   - 'Home': 'index.md'
-  - 'Ingestão de Dados':'1-Ingestão de Dados.md'
-  - 'Pré-processamento': '2-Pré processamento dos dados.md'
-  - 'Conversão de estrutura Matricial': '3-Conversão de estrutura Matricial.md'
-  - 'Hierarquização': '4-Hierarquização.md'
-  - 'Integração Fundiária e Ambiental': 'docs/5-Integração Fundiária e Ambiental.md' 
+  - 'Ingestão de Dados': 'Ingestão de Dados.md'
+  - 'Pré-processamento': 'Pré processamento dos dados.md'
+  - 'Conversão de estrutura Matricial': 'Conversão de estrutura Matricial.md'
+  - 'Hierarquização': 'Hierarquização.md'
+  - 'Integração Fundiária e Ambiental': 'Integração Fundiária e Ambiental.md' 

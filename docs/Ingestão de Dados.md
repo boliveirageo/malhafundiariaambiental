@@ -1,8 +1,17 @@
 # Ingestão dos Dados 
 
-## Sobre
-O material apresenta o desenvolvimento de um algoritmo avançado voltado para a criação de uma malha fundiária ambiental integrada e precisa para o território brasileiro. O processo é estruturado em cinco etapas principais, que abrangem desde a coleta e tratamento de dados brutos até a resolução de conflitos de sobreposição territorial por meio do método multicritério AHP. Essa metodologia transforma registros diversos em um produto geoespacial padronizado, garantindo segurança jurídica e precisão técnica ao classificar áreas como propriedades privadas, terras indígenas e unidades de conservação. Além de fornecer uma visão detalhada dos ativos ambientais, o sistema permite atualizações mensais para apoiar análises territoriais de escala nacional. O objetivo final é oferecer uma ferramenta robusta para a gestão territorial, capaz de identificar com clareza a ocupação do solo e a conformidade ambiental no Brasil.
-** **
+A primeira etapa consiste na coleta e organização sistemática das bases fundiárias de referência [1]. O objetivo é realizar o download dos dados e integrá-los em um banco de dados **PostgreSQL**, criando um ambiente unificado para o processamento [2].
 
+## Bases de Dados Utilizadas
+
+| Categoria | Fontes de Dados |
+| :--- | :--- |
+| **Territórios Sociais e de Proteção** | Terras Indígenas (homologadas e não homologadas), Territórios Quilombolas (declarados e não declarados), Unidades de Conservação (Uso Sustentável e Proteção Integral), Territórios de Proteção, Áreas Militares e Massas d’água . |
+| **Reforma Agrária** | Assentamentos, Glebas Públicas e Florestas Públicas Não Declaradas (FPND) . |
+| **Imóveis Rurais Privados** | SIGEF / SNCI (INCRA) e Cadastro Ambiental Rural (CAR) . |
+
+## Fluxo de Trabalho
+![Figura 1 - Fluxograma de Ingestão de Dados](/malhafundiariaambiental/figuras/ingestao_dados.png)
+*Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)* [2].
   
   
