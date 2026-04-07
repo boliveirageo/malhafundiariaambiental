@@ -31,8 +31,13 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 
 
 ## Fluxo de Trabalho
+
 ![Figura 1 - Fluxograma de Ingestão de Dados](/malhafundiariaambiental/figuras/ingestao_dados.png)
 
 *Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)*.
+
+![Figura 1 - Fluxograma de Ingestão de Dados](/figuras/ingestao_dados.png)
+*Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)* [2].
+
   
   
