@@ -11,7 +11,7 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 | **Imóveis Rurais Privados** | SIGEF / SNCI (INCRA) e Cadastro Ambiental Rural (CAR) . |
 
 ## Fluxo de Trabalho
-![Figura 1 - Fluxograma de Ingestão de Dados](/malhafundiariaambiental/figuras/ingestao_dados.png)
+![Figura 1 - Fluxograma de Ingestão de Dados](/figuras/ingestao_dados.png)
 *Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)* [2].
   
   
