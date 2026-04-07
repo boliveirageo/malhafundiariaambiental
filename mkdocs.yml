@@ -3,11 +3,8 @@ site_author: Bernard Silva de Oliveira
 theme: 'readthedocs'
  
 nav:
-  - 'Home': 'index.md'
-  - 'Ingestão de Dados':
-    - 'Resumo': 'docs/1-Ingestão de Dados.md'
-    - 'Dados Geográficos': 'docs/1-Ingestão de Dados.md'
-
+  - 'Home': 'docs/index.md'
+  - 'Ingestão de Dados':'docs/1-Ingestão de Dados.md'
   - 'Pré-processamento': 'docs/2-Pré processamento dos dados.md'
   - 'Conversão de estrutura Matricial': 'docs/3-Conversão de estrutura Matricial.md'
   - 'Hierarquização': 'docs/4-Hierarquização.md'
