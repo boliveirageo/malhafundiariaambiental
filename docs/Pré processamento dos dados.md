@@ -10,10 +10,12 @@ Nesta etapa, os dados brutos integrados no PostgreSQL passam por correções geo
 4. **Resolução de Duplicidades:** No CAR, mantém-se o registro mais recente. Entre SIGEF e CAR, o CAR é recortado para eliminar o conflito.
 5. **Priorização Social:** O recorte das propriedades é feito da menor para a maior área. Esse critério é aplicado nos dados do CAR. Já na relação entre SIGEF e SNCI, aplica-se a priorização social, sendo que os dados do SIGEF têm maior prioridade sobre os do SNCI.
 
-## Exemplos Visuais
+## Fluxograma
 ![Figura 2 - Fluxograma de Pré-processamento](/figuras/pre_processamento.png)
 
 Figura 2 - Fluxograma de Pré-processamento
+
+## Exemplos Visuais
 
 ![Figura 3 - Exemplo de Grilagem Digital](/figuras/grilagem_digital.png)
 
