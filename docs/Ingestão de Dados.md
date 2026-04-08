@@ -8,7 +8,7 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 #### Grupo: Territórios Sociais e de Proteção
 | Fonte | URL dos Dados |
 | :--- | :--- |
-| Terras Indígenas (homologadas e não homologadas)||
+| Terras Indígenas (homologadas e não homologadas)|https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP|
 | Territórios Quilombolas (declarados e não declarados) ||
 | Unidades de Conservação (Uso Sustentável e Proteção Integral) ||
 | Territórios de Proteção ||
