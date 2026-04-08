@@ -30,6 +30,8 @@ Tabela 2: Matriz de Peso dos Critérios Normalizados
 | Precisão Geométrica | 0,198 | 0,221 | 0,322 | 0,313 | 0,26 |
 | Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
 | Estabilidade | 0,084 | 0,044 | 0,035 | 0,063 | 0,06 |
+
+Tabela 3: Nível Hierarquico das camadas 
 ** **
 ## Refinamento Vetorial
 Após a malha matricial, realiza-se uma validação com a estrutura vetorial: se a sobreposição for acima de 10%, o vetor é mantido para evitar o efeito "pixelizado" (serrilhado), excluindo apenas ruídos
@@ -41,14 +43,6 @@ Após a malha matricial, realiza-se uma validação com a estrutura vetorial: se
 ![Figura 6 - Fluxograma de Análise de Sobreposição](/figuras/hierarquização.png)
 
 Figura 6 - Fluxograma de Análise de Sobreposição
-
-![Figura 7 - Matriz de Critérios AHP](/figuras/critérios.png)
-
-Figura 7 - Matriz de Paridade entre os Critérios 
-
-![Figura 8 - Matriz de peso dos critérios normalizados](/figuras/criterios_normal.png)
-
-Figura 8 - Matriz de peso dos critérios normalizados 
 
 ![Figura 9 - Nível Hierárquico de cada camada fundiária](/figuras/nivel_hierarquico.png)
 
