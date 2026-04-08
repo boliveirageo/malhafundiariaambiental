@@ -16,8 +16,8 @@ Matrizes de Pesos e Critérios
 Abaixo, os pesos definidos por meio da escala de Saaty (1 a 9):
 
 Tabela 1: Matriz de Peso dos Critérios  
-| Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade || 
-| :--- | :---: | :---: | :---: | :---: | :---: |
+| Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | 
+| :--- | :---: | :---: | :---: | :---: |
 | Segurança Jurídica | 1 | 3 | 5 | 7 |
 | Precisão Geométrica | 1/3 | 1 | 3 | 5 |
 | Sobreposição | 1/5 | 1/3 | 1 | 3 |
