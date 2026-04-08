@@ -29,7 +29,8 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 | SIGEF / SNCI (INCRA) ||
 | Cadastro Ambiental Rural (CAR) ||
 
-
+Estes dados são integrados e armazenados em um banco de dados PostgreSQL para garantir a integridade e facilitar o processamento subsequente
+** **
 ## Fluxo de Trabalho
 
 ![Figura 1 - Fluxograma de Ingestão de Dados](/figuras/ingestao_dados.png)
