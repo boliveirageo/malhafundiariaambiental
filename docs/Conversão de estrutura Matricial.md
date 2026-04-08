@@ -29,5 +29,6 @@ A conversão matricial (rasterização) é fundamental para permitir a análise 
 ## Construção da Imagem Multibanda
 As camadas são empilhadas em uma imagem multibanda, onde cada banda corresponde a uma camada fundiária processada [6].
 
-![Figura 5 - Processo de Conversão Matricial](slide_7_image)
-*Referência: Slide 7* [6].
+![Figura 5 - Processo de Conversão Matricial](/figuras/conversao_raster.png)
+
+Figura 5 - Processo de Conversão Matricial
