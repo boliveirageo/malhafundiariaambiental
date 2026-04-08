@@ -18,5 +18,5 @@ O algoritmo disponibiliza três subprodutos principais:
 
 ![Figura 10 - Fluxograma de Integração Ambiental](/figuras/integracao_ambiental.png)
 
-#### Figura 10 - Fluxograma de Integração Ambiental
+Figura 10 - Fluxograma de Integração Ambiental
 
