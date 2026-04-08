@@ -4,7 +4,7 @@
 A conversão matricial (rasterização) é fundamental para permitir a análise de sobreposições em larga escala de forma eficiente.
 
 ## Parâmetros de Rasterização
-- **Resolução Espacial:** Pixel de **10 metros**, compatível com escala 1:25.000.
+- **Resolução Espacial: O arqvuio vetorial é convertido para o ** Pixel de **10 metros**, compatível com escala 1:25.000.
 - **Identificação:** Cada camada recebe um valor de pixel distinto para permitir a diferenciação na álgebra de mapas.
 
 ## Tabela de Identificação de Classes (Exemplo Ilustrativo)
