@@ -1,6 +1,6 @@
 # Ingestão dos Dados 
 
-A primeira etapa consiste na coleta e organização sistemática das bases fundiárias de referência [1]. O objetivo é realizar o download dos dados e integrá-los em um banco de dados **PostgreSQL**, criando um ambiente unificado para o processamento [2].
+A primeira etapa consiste na coleta e organização sistemática das bases fundiárias de referência. O objetivo é realizar o download dos dados e integrá-los em um banco de dados **PostgreSQL**, criando um ambiente unificado para o processamento.
 
 ## Bases de Dados Utilizadas
 
