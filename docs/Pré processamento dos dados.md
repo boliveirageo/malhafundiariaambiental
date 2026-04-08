@@ -1,6 +1,20 @@
 # Pré-processamento dos dados 
 
 ## Sobre
-O material apresenta o desenvolvimento de um algoritmo avançado voltado para a criação de uma malha fundiária ambiental integrada e precisa para o território brasileiro. O processo é estruturado em cinco etapas principais, que abrangem desde a coleta e tratamento de dados brutos até a resolução de conflitos de sobreposição territorial por meio do método multicritério AHP. Essa metodologia transforma registros diversos em um produto geoespacial padronizado, garantindo segurança jurídica e precisão técnica ao classificar áreas como propriedades privadas, terras indígenas e unidades de conservação. Além de fornecer uma visão detalhada dos ativos ambientais, o sistema permite atualizações mensais para apoiar análises territoriais de escala nacional. O objetivo final é oferecer uma ferramenta robusta para a gestão territorial, capaz de identificar com clareza a ocupação do solo e a conformidade ambiental no Brasil.
-** **
-## Etapas Metodológicas
+Nesta etapa, os dados brutos integrados no PostgreSQL passam por correções geométricas e filtragens rigorosas para garantir a precisão dos cálculos e a integridade da malha
+
+## Procedimentos Principais
+1. **Correção e Reprojeção:** Eliminação de inconsistências geométricas e reprojeção de todas as camadas para uma projeção métrica (Albers).
+2. **Filtragem do CAR:** Remoção de imóveis com status "Cancelado" ou "Suspenso", e exclusão de tipos de assentamentos e povos tradicionais que já existem em bases oficiais mais estáveis.
+3. **Exclusão de Grilagem Digital:** Imóveis com área igual ou superior à área total do município são removidos para prevenir distorções.
+4. **Resolução de Duplicidades:** No CAR, mantém-se o registro mais recente. Entre SIGEF e CAR, o CAR é recortado para eliminar o conflito.
+5. **Priorização Social:** O recorte das propriedades é feito da menor para a maior área. Esse critério é aplicado nos dados do CAR. Já na relação entre SIGEF e SNCI, aplica-se a priorização social, sendo que os dados do SIGEF têm maior prioridade sobre os do SNCI.
+
+## Exemplos Visuais
+![Figura 2 - Fluxograma de Pré-processamento](/figuras/pre_processamento.png)
+
+Figura 2 - Fluxograma de Pré-processamento
+
+![Figura 3 - Exemplo de Grilagem Digital](/figuras/grilagem_digital.png)
+
+Figura 3 - Exemplo de Grilagem Digital
