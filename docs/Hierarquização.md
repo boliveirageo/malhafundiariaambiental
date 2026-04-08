@@ -1,6 +1,35 @@
 # Hierarquização das camadas fundiárias
 
 ## Sobre
-O material apresenta o desenvolvimento de um algoritmo avançado voltado para a criação de uma malha fundiária ambiental integrada e precisa para o território brasileiro. O processo é estruturado em cinco etapas principais, que abrangem desde a coleta e tratamento de dados brutos até a resolução de conflitos de sobreposição territorial por meio do método multicritério AHP. Essa metodologia transforma registros diversos em um produto geoespacial padronizado, garantindo segurança jurídica e precisão técnica ao classificar áreas como propriedades privadas, terras indígenas e unidades de conservação. Além de fornecer uma visão detalhada dos ativos ambientais, o sistema permite atualizações mensais para apoiar análises territoriais de escala nacional. O objetivo final é oferecer uma ferramenta robusta para a gestão territorial, capaz de identificar com clareza a ocupação do solo e a conformidade ambiental no Brasil.
+Esta fase identifica áreas com conflito espacial (onde dois ou mais polígonos coexistem) e define qual camada deve prevalecer na malha final [7].
 ** **
-## Etapas Metodológicas
+
+## Método AHP (Processo Hierárquico Analítico)
+Para resolver sobreposições, utiliza-se o método multicritério **AHP**, que pondera as camadas com base em quatro critérios principais:
+
+1. **Segurança Jurídica:** Grau de respaldo legal e reconhecimento formal.
+2. **Precisão Geométrica:** Qualidade e acurácia espacial dos dados.
+3. **Sobreposição:** Capacidade de manter a integridade diante de conflitos.
+4. **Estabilidade do domínio:** Permanência e consolidação histórica da posse ou uso.
+
+## Resultados do Processo
+- Áreas sem sobreposição são incorporadas diretamente [7].
+- Áreas com sobreposição passam pela hierarquização ponderada, gerando uma malha sem vazios ou duplicidades, com decisões rastreáveis [8, 9].
+
+![Figura 6 - Fluxograma de Análise de Sobreposição](/figuras/hierarquização)
+
+Figura 6 - Fluxograma de Análise de Sobreposição
+
+![Figura 7 - Matriz de Critérios AHP](/figuras/critérios.png)
+
+Figura 7 - Matriz de Paridade entre os Critérios 
+
+![Figura 8 - Matriz de peso dos critérios normalizados](/figuras/criterios_normal.png)
+
+Figura 8 - Matriz de peso dos critérios normalizados 
+
+![Figura 9 - Nível Hierárquico de cada camada fundiária](/figuras/nivel_hierarquico.png)
+
+Figura 9 - Nível Hierárquico de cada camada fundiária 
+
+
