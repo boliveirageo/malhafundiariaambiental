@@ -32,7 +32,7 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 
 ## Fluxo de Trabalho
 
-![Figura 1 - Fluxograma de Ingestão de Dados](/figuras/ingestao_dados.png)
+(/figuras/ingestao_dados.png)
 
 Figura 1 - Fluxograma de Ingestão de Dados
 
