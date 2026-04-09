@@ -1,4 +1,4 @@
-# Hierarquização das camadas fundiárias
+# Análise de sobre posição
 
 ## Sobre
 Esta fase identifica áreas com conflito espacial (onde dois ou mais polígonos coexistem) e define qual camada deve prevalecer na malha final.
