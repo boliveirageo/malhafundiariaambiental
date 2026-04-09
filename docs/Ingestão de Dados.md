@@ -26,21 +26,21 @@ A primeira etapa consiste na coleta e organização sistemática das bases fundi
 #### Grupo: Imóveis Rurais Privados
 | Fonte | URL dos Dados |
 | :--- | :--- |
-| SIGEF / SNCI (INCRA) |https://certificacao.incra.gov.br/csv_shp/export_shp.py|
-| Cadastro Ambiental Rural (CAR) |https://consultapublica.car.gov.br/publico/imoveis/index|
+| SIGEF / SNCI (INCRA) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
+| Cadastro Ambiental Rural (CAR) |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
 #### Grupo: Ativos Ambientais
 | Fonte | URL dos Dados |
 | :--- | :--- |
-| Área de preservação permanente |https://geo.fbds.org.br/|
-| Reserva Legal |https://consultapublica.car.gov.br/publico/imoveis/index|
+| Área de preservação permanente |[https://geo.fbds.org.br/](https://geo.fbds.org.br/)|
+| Reserva Legal |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
 Estes dados são integrados e armazenados em um banco de dados PostgreSQL para garantir a integridade e facilitar o processamento subsequente
 ** **
 ## Fluxo de Trabalho
 
 
-![Figura 1 - Fluxograma de Ingestão de Dados](../figuras/ingestao_dados.png)
+![Figura 1 - Fluxograma de Ingestão de Dados](/malhafundiariaambiental/figuras/ingestao_dados.png)
 
 Figura 1 - Fluxograma de Ingestão de Dados
 

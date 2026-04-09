@@ -18,7 +18,7 @@ A conversão matricial (rasterização) é fundamental para permitir a análise 
 | Área Militar | 8 | 8 | 9 | 9 | 8,18 | 5 |
 | Imóvel Privado (SIGEF/SNCI) | 8 | 9 | 6 | 7 | 7,86 | 6 |
 | Assentamento | 7 | 7 | 6 | 6 | 6,76 | 7 |
-| Glebas Públicas - FPND | 6 | 7 | 5 | 7 | 6,20 | 8 |
+| Glebas Públicas - Floresta Pública Não Destinada | 6 | 7 | 5 | 7 | 6,20 | 8 |
 | UC Uso Sustentável | 6 | 6 | 6 | 7 | 6,06 | 9 |
 | Glebas Públicas | 6 | 6 | 4 | 5 | 5,70 | 10 |
 | Quilombola Declarado | 5 | 6 | 4 | 6 | 5,20 | 11 |

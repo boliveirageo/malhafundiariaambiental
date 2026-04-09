@@ -8,7 +8,7 @@ Nesta etapa, os dados brutos integrados no PostgreSQL passam por correções geo
 2. **Filtragem do CAR:** Remoção de imóveis com status "Cancelado" ou "Suspenso", e exclusão de tipos de assentamentos e povos tradicionais que já existem em bases oficiais mais estáveis.
 3. **Exclusão de Grilagem Digital:** Imóveis do CAR com área igual ou superior à área total do município são removidos para prevenir distorções.
 4. **Resolução de Duplicidades:** Priorização do registro mais recente e eliminação de sobreposição com áreas do INCRA (SIGEF/SNCI) por meio do recorte das feições.
-5. **Priorização Social:** Recorte delimitado a pequenas propriedades osobre as grande propriedades. Essa etapa é feita na base de dados do CAR e SIGEF/SNCI.
+5. **Priorização Social:** Recorte delimitado a pequenas propriedades sobre as grande propriedades. Essa etapa é feita na base de dados do CAR e SIGEF/SNCI.
 
 ## Fluxograma 
 ![Figura 2 - Fluxograma de Pré-processamento](/malhafundiariaambiental/figuras/pre_processamento.png)
