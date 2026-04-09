@@ -39,7 +39,7 @@ Estes dados são integrados e armazenados em um banco de dados PostgreSQL para g
 ** **
 ## Fluxo de Trabalho
 
-![Figura 1 - Fluxograma de Ingestão de Dados](figuras/ingestao_dados.png)
+![Figura 1 - Fluxograma de Ingestão de Dados](https://github.com/boliveirageo/malhafundiariaambiental/blob/main/figuras/ingestao_dados.png)
 
 Figura 1 - Fluxograma de Ingestão de Dados
 
