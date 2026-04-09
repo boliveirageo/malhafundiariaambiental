@@ -1,40 +1,18 @@
 # Análise de sobre posição
 
 ## Sobre
-Esta fase identifica áreas com conflito espacial (onde dois ou mais polígonos coexistem) e define qual camada deve prevalecer na malha final.
+Esta fase identifica áreas com conflito espacial (onde dois ou mais poligonos coexistem) e define qual camada deve prevalecer na malha final.
 ** **
 
-## Método AHP (Processo Hierárquico Analítico)
-Para resolver sobreposições, utiliza-se o método multicritério **AHP**, que pondera as camadas com base em quatro critérios principais:
+## Procedimento
+A metodologia aplicada para a consolidação das informações consistiu em uma análise de sobreposição espacial por meio da técnica de agregação de pixels. O processo foi executado através do cálculo do valor mínimo (mínimo pixel a pixel) entre todas as as imagens convertidas das camadas fundiárias, sem priorizado o menor valor, ou seja, o pixel da camada fundiária com maior prioridade(menor valor hierarquico) gerando um arquivo matricial da malha fundiária integrada.
 
-1. **Segurança Jurídica:** Grau de respaldo legal e reconhecimento formal.
-2. **Precisão Geométrica:** Qualidade e acurácia espacial dos dados.
-3. **Sobreposição:** Capacidade de manter a integridade diante de conflitos.
-4. **Estabilidade do domínio:** Permanência e consolidação histórica da posse ou uso.
 
-Matrizes de Pesos e Critérios
-Abaixo, os pesos definidos por meio da escala de Saaty (1 a 9):
-
-Tabela 1: Matriz de Peso dos Critérios  
-| Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | 
-| :--- | :---: | :---: | :---: | :---: |
-| Segurança Jurídica | 1 | 3 | 5 | 7 |
-| Precisão Geométrica | 1/3 | 1 | 3 | 5 |
-| Sobreposição | 1/5 | 1/3 | 1 | 3 |
-| Estabilidade | 1/7 | 1/5 | 1/3 | 1 |
-
-Tabela 2: Matriz de Peso dos Critérios Normalizados 
-| Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | Média (Peso) | 
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| Segurança Jurídica | 0,599 | 0,662 | 0,536 | 0,438 | 0,56 |
-| Precisão Geométrica | 0,198 | 0,221 | 0,322 | 0,313 | 0,26 |
-| Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
-| Estabilidade | 0,084 | 0,044 | 0,035 | 0,063 | 0,06 |
-
-Tabela 3: Nível Hierarquico das camadas 
 ** **
 ## Refinamento Vetorial
-Após a malha matricial, realiza-se uma validação com a estrutura vetorial: se a sobreposição for acima de 10%, o vetor é mantido para evitar o efeito "pixelizado" (serrilhado), excluindo apenas ruídos
+Após a finalização da malha fundiária, cada classe foi segregada e submetida a um cálculo de média de cada valor de pixel em relação ao seu dado na estrutura vetorial. Estabeleceu-se que, caso a estrutura vetorial apresentasse uma cobertura de sobreposição acima de 10% em relação à mesma classe na estrutura matricial, o vetor seria mantido. Essa operação foi realizada para as 14 classes fundiárias visando preservar a originalidade da informação, visto que a conversão da malha matricial para vetor resultou em uma geometria serrilhada ("pixelizada").  O limiar de 10% foi utilizado para excluir vetores com ruídos.
+Para integrar todas as classes no formato vetorial, aplicou-se uma ordenação por peso: a classe de maior prioridade permaneceu intacta, enquanto as de menor peso foram recortadas em áreas sobrepostas.
+
 ** **
 ## Resultados do Processo
 - Áreas sem sobreposição são incorporadas diretamente.
