@@ -43,7 +43,7 @@ Estes dados são integrados e armazenados em um banco de dados PostgreSQL para g
 
 Figura 1 - Fluxograma de Ingestão de Dados
 
-*Modelo de Referência: Cartas da Terra (Malha Fundiária v2, 2025)*
+*Modelo de Referência: Cartas da Terra (iGPP- Cartas da Terra, 2026)*
 
 
   
