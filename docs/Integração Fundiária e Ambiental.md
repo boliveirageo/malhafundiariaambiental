@@ -20,7 +20,7 @@ O algoritmo disponibiliza três subprodutos principais:
 3. **Malha de Sobreposições:** Estrutura matricial (Quantidade de sobreposições).
  
 
-![Figura 10 - Fluxograma de Integração Ambiental](/figuras/integracao_ambiental.png)
+![Figura 10 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental.png)
 
 Figura 10 - Fluxograma de Integração Ambiental
 
