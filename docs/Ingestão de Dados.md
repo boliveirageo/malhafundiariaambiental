@@ -40,7 +40,7 @@ Estes dados são integrados e armazenados em um banco de dados PostgreSQL para g
 ## Fluxo de Trabalho
 
 
-<img src='../figuras/ingestao_dados.png'>
+![Figura 1 - Fluxograma de Ingestão de Dados](../figuras/ingestao_dados.png)
 
 Figura 1 - Fluxograma de Ingestão de Dados
 
