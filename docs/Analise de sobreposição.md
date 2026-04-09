@@ -18,12 +18,8 @@ Para integrar todas as classes no formato vetorial, aplicou-se uma ordenação p
 - Áreas sem sobreposição são incorporadas diretamente.
 - Áreas com sobreposição passam pela hierarquização ponderada, gerando uma malha sem vazios ou duplicidades, com decisões rastreáveis.
 
-![Figura 6 - Fluxograma de Análise de Sobreposição](/figuras/hierarquização.png)
 
-Figura 6 - Fluxograma de Análise de Sobreposição
 
-![Figura 9 - Nível Hierárquico de cada camada fundiária](/figuras/nivel_hierarquico.png)
 
-Figura 9 - Nível Hierárquico de cada camada fundiária 
 
 
