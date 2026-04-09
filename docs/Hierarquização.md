@@ -26,17 +26,18 @@ Os pesos aplicados nos critérios usou a escala de Saaty que varia entre 1 e 9, 
 
 A tabela 1 mostras os pesos definidos por meio da escala de Saaty (1 a 9):
 
-Tabela 1: Matriz de Peso dos Critérios  
+### Tabela 1: Matriz de Peso dos Critérios  
 | Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | 
-| :--- | :---: | :---: | :---: | :---: |
+| :--- | :--- | :--- | --- | :--- |
 | Segurança Jurídica | 1 | 3 | 5 | 7 |
 | Precisão Geométrica | 1/3 | 1 | 3 | 5 |
 | Sobreposição | 1/5 | 1/3 | 1 | 3 |
 | Estabilidade | 1/7 | 1/5 | 1/3 | 1 |
 
-Tabela 2: Matriz de Peso dos Critérios Normalizados 
+
+### Tabela 2: Matriz de Peso dos Critérios Normalizados 
 | Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | Média (Peso) | 
-| :--- | :---: | :---: | :---: | :---: | :---: |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | Segurança Jurídica | 0,599 | 0,662 | 0,536 | 0,438 | 0,56 |
 | Precisão Geométrica | 0,198 | 0,221 | 0,322 | 0,313 | 0,26 |
 | Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
