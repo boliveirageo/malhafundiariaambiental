@@ -12,19 +12,8 @@ Para resolver sobreposições, utiliza-se o método multicritério **AHP**, que 
 3. **Sobreposição:** Capacidade de manter a integridade diante de conflitos.
 4. **Estabilidade do domínio:** Permanência e consolidação histórica da posse ou uso.
 
-Os pesos aplicados nos critérios usou a escala de Saaty que varia entre 1 e 9, onde:
-
-**Peso 1 - Importância Igual:** As duas atividades contribuem igualmente para o objetivo.
-
-**Peso 3 - Importância Moderada:** A experiência e o julgamento favorecem ligeiramente uma atividade sobre a outra.
-
-**Peso 5 - Importância Forte:** A experiência e o julgamento favorecem fortemente uma atividade sobre a outra.
-
-**Peso 7 - Importância Muito Forte:** Uma atividade é fortemente favorecida e sua dominância é demonstrada na prática.
-
-**Peso 9 - Importância Extrema:** A evidência favorecendo uma atividade sobre a outra é da ordem mais alta possível de afirmação.
-
-A tabela 1 mostras os pesos definidos por meio da escala de Saaty (1 a 9):
+Matrizes de Pesos e Critérios
+Abaixo, os pesos definidos por meio da escala de Saaty (1 a 9):
 
 Tabela 1: Matriz de Peso dos Critérios  
 | Critérios | Seg. Jurídica | Precisão Geo. | Sobreposição | Estabilidade | 
@@ -42,6 +31,21 @@ Tabela 2: Matriz de Peso dos Critérios Normalizados
 | Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
 | Estabilidade | 0,084 | 0,044 | 0,035 | 0,063 | 0,06 |
 
+Tabela 3: Nível Hierarquico das camadas 
 ** **
+## Refinamento Vetorial
+Após a malha matricial, realiza-se uma validação com a estrutura vetorial: se a sobreposição for acima de 10%, o vetor é mantido para evitar o efeito "pixelizado" (serrilhado), excluindo apenas ruídos
+** **
+## Resultados do Processo
+- Áreas sem sobreposição são incorporadas diretamente.
+- Áreas com sobreposição passam pela hierarquização ponderada, gerando uma malha sem vazios ou duplicidades, com decisões rastreáveis.
+
+![Figura 6 - Fluxograma de Análise de Sobreposição](/figuras/hierarquização.png)
+
+Figura 6 - Fluxograma de Análise de Sobreposição
+
+![Figura 9 - Nível Hierárquico de cada camada fundiária](/figuras/nivel_hierarquico.png)
+
+Figura 9 - Nível Hierárquico de cada camada fundiária 
 
 

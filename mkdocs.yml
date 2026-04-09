@@ -7,8 +7,8 @@ nav:
   - 'Home': 'index.md'
   - 'Ingestão de Dados': 'Ingestão de Dados.md'
   - 'Pré-processamento': 'Pré processamento dos dados.md'
-  - 'Conversão de estrutura Matricial': 'Conversão de estrutura Matricial.md'
   - 'Hierarquização': 'Hierarquização.md'
+  - 'Conversão de estrutura Matricial': 'Conversão de estrutura Matricial.md'
   - 'Integração Fundiária e Ambiental': 'Integração Fundiária e Ambiental.md' 
 
 
