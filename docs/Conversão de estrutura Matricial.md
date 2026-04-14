@@ -9,8 +9,8 @@ A conversão matricial (rasterização) é fundamental para permitir a análise 
 - **Valor do Pixel da Imagem:** Cada camada recebe um valor de pixel distinto do peso calculado no processo de hierarquização para permitir a diferenciação na álgebra de mapas.
 
 
-### Tabela 1 - Cálculo da Hierarquização das camadas fundiárias
-| Classe Fundiária | Seg. Jurídica (0,56) | Precisão Geo (0,26) | Sobreposição (0,12) | Estabilidade (0,06) | Peso Global (AHP) | Nível Hierarquizado |
+### Tabela 3 - Cálculo da Hierarquização das camadas fundiárias
+| Classe Fundiária | Segurança Jurídica| Precisão Geométrica|Sobreposição|Estabilidade| Peso Global (AHP) | Nível Hierarquizado |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Massa d'água / Urbana | 9 | 9 | 9 | 9 | 9,00 | 1 |
 | TI Homologada | 9 | 8 | 7 | 9 | 8,52 | 3 |
