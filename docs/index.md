@@ -42,4 +42,9 @@ O produto é desenvolvido pelo Laboratório de Sensoriamento Remoto e Geoprocess
 
 Para parcerias, dúvidas acadêmicas ou sugestões, entre em contato pelo e-mail lapig.ufg@gmail.com
 
+## Histórico de versões
+
+* v 1.0
+    * Construção da Malha Fundiária Ambiental para o estado de Goiás. 
+
 
