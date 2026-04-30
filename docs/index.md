@@ -13,17 +13,7 @@ Acreditamos que a gestão territorial eficiente começa com dados confiáveis. Q
 ## Como é feito
 Da integração de dados ao produto territorial
 
-* **1 - Ingestão dos Dados:** Coleta e organização de bases fundiárias e territoriais, incluindo propriedades privadas, terras indígenas e unidades de conservação.
-
-* **2 - Pré-processamento:** Correção de inconsistências geométricas, padronização das bases e remoção de duplicidades e registros inválidos.
-
-* **3 - Hierarquização:** Definição de prioridades entre as camadas territoriais por meio de análise multicritério, garantindo coerência em casos de sobreposição.
-
-* **4 - Conversão Matricial:** As camadas fundiárias são convertidas para formato raster, organizadas em uma grade contínua onde cada pixel representa a prioridade definida pelo método AHP.
-
-* **5 - Análise de sobreposição:** Os conflitos entre camadas são resolvidos mantendo, em cada pixel, a classe fundiária de maior prioridade. Em seguida, os vetores originais são recuperados para compor a malha final.
-
-* **6- Integração Ambiental:** Os ativos ambientais são incorporados à malha fundiária, permitindo análises de conformidade e a geração de estatísticas ambientais associadas ao território.
+!(figuras/como_e_feito.png)
 
 ## O que o dado permite
 
