@@ -11,6 +11,11 @@ Os dados são organizados em quatro grupos principais:
 * Imóveis rurais privados
 * Ativos ambientais
 
+** **
+
+![Figura 1 - Fluxograma de Ingestão de Dados](figuras/ingestao_de_dados_2.png)
+
+
 ## Fontes de Dados
 
 #### Territórios Sociais e de Proteção
@@ -42,14 +47,7 @@ Os dados são organizados em quatro grupos principais:
 | Área de preservação permanente (APP) | FBDS e SICAR |[https://geo.fbds.org.br/](https://geo.fbds.org.br/)|
 | Reserva Legal | SICAR |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
-** **
-## Fluxo de Trabalho
 
-
-![Figura 1 - Fluxograma de Ingestão de Dados](figuras/ingestao_de_dados_2.png)
-
-
-Figura 1 - Fluxograma de Ingestão de Dados
 
 A integração dessas bases constitui o ponto de partida para as etapas seguintes de processamento, onde são realizadas correções topológicas, resolução de sobreposições e integração com ativos ambientais.
 
