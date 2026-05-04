@@ -17,11 +17,11 @@ Foram considerados quatro critérios principais:
 ## Escala de Avaliação (Saaty)
 Os pesos foram definidos com base na escala de Saaty (1 a 9), utilizada para comparações pareadas:
 
-**Peso 1 - Importância Igual:** As duas atividades contribuem igualmente para o objetivo.
-**Peso 3 - Importância Moderada:** A experiência e o julgamento favorecem ligeiramente uma atividade sobre a outra.
-**Peso 5 - Importância Forte:** A experiência e o julgamento favorecem fortemente uma atividade sobre a outra.
-**Peso 7 - Importância Muito Forte:** Uma atividade é fortemente favorecida e sua dominância é demonstrada na prática.
-**Peso 9 - Importância Extrema:** A evidência favorecendo uma atividade sobre a outra é da ordem mais alta possível de afirmação.
+* **Peso 1 - Importância Igual:** As duas atividades contribuem igualmente para o objetivo.
+* **Peso 3 - Importância Moderada:** A experiência e o julgamento favorecem ligeiramente uma atividade sobre a outra.
+* **Peso 5 - Importância Forte:** A experiência e o julgamento favorecem fortemente uma atividade sobre a outra.
+* **Peso 7 - Importância Muito Forte:** Uma atividade é fortemente favorecida e sua dominância é demonstrada na prática.
+* **Peso 9 - Importância Extrema:** A evidência favorecendo uma atividade sobre a outra é da ordem mais alta possível de afirmação.
 
 ## Matriz de Comparação dos Critérios
 
