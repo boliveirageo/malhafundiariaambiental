@@ -17,8 +17,8 @@ Nesta etapa, os dados integrados no banco PostgreSQL passam por correções geom
 
 Figura 2 - Fluxograma de Pré-processamento
 
-## Exemplo de Grilagem Digital
+## Exemplo de inconsistências de área
 
 ![Figura 3 - Exemplo de Grilagem Digital](figuras/grilagem_digital.png)
 
-Figura 3 - Exemplo de Grilagem Digital
+Figura 3 - Exemplo de inconsistências de área
