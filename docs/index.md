@@ -17,12 +17,7 @@ Da integração de dados ao produto territorial
 
 ## O que o dado permite
 
-* Identificar limites e sobreposições territoriais
-* Avaliar a ocupação e uso do solo
-* Gerar e analisar estatísticas de ativos ambientais
-* Apoiar políticas públicas e regularização ambiental
-* Fortalecer a segurança jurídica e a governança territorial
-* Subsidiar cadeias produtivas livres de desmatamento
+![Figura 4 - Fluxograma de Integração Ambiental](figuras/o_que_o_dado_permite.png)
 
 ## Quem desenvolve
 
