@@ -1,8 +1,6 @@
 # 04 - Reclassificação das Camadas
 
-Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquização definida pelo método AHP, atribuindo a cada classe um nível de prioridade que será utilizado na resolução de conflitos espaciais.
-
-Essa etapa transforma a hierarquia conceitual (pesos AHP) em valores numéricos aplicáveis à álgebra de mapas.
+Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquização definida pelo método AHP, atribuindo a cada classe um nível de prioridade que será utilizado na resolução de conflitos espaciais. Essa etapa transforma a hierarquia conceitual (pesos AHP) em valores numéricos aplicáveis à álgebra de mapas.
 
 ## Como Funciona
 01. **Cálculo do peso das camadas**: Para cada classe fundiária, são atribuídas notas para os critérios definidos (segurança jurídica, precisão geométrica, sobreposição e estabilidade), seguindo a escala de Saaty. Essas notas são ponderadas pelos pesos derivados do AHP, resultando em um peso global por classe.
