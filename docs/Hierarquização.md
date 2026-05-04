@@ -1,4 +1,4 @@
-# Hierarquização das camadas fundiárias
+# 03. Hierarquização das camadas fundiárias
 
 Esta etapa é responsável por identificar áreas com conflito espacial — onde dois ou mais polígonos de diferentes bases coexistem — e definir qual classe fundiária deve prevalecer na malha final.
 ** **
