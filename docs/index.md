@@ -17,7 +17,7 @@ Da integração de dados ao produto territorial
 
 ## O que o dado permite
 
-![Figura 4 - Fluxograma de Integração Ambiental](figuras/o_que_o_dado_permite.png)
+![Figura 4 - Fluxograma de Integração Ambiental](figuras/o_que_o_dado_permite_2.png)
 
 ## Quem desenvolve
 
