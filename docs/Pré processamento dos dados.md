@@ -1,4 +1,4 @@
-# Pré-processamento dos dados 
+# 02 - Pré-processamento dos dados 
 
 Nesta etapa, os dados integrados no banco PostgreSQL passam por correções geométricas e filtragens, com o objetivo de garantir consistência espacial, integridade das feições e confiabilidade nos processos subsequentes.
 
