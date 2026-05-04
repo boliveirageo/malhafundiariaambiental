@@ -1,4 +1,4 @@
-# 01 - Ingestão dos Dados 
+# 01. Ingestão dos Dados 
 
 Esta etapa consiste na aquisição, organização e armazenamento das principais bases fundiárias e ambientais utilizadas na construção da Malha Fundiária Ambiental. Os dados são obtidos a partir de fontes oficiais e integrados em um ambiente estruturado de banco de dados **PostgreSQL**, garantindo padronização e rastreabilidade. 
 
