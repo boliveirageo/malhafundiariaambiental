@@ -46,7 +46,7 @@ Os dados são organizados em quatro grupos principais:
 ## Fluxo de Trabalho
 
 
-![Figura 1 - Fluxograma de Ingestão de Dados](figuras/ingestao_dados.png)
+![Figura 1 - Fluxograma de Ingestão de Dados](figuras/ingestao_de_dados_2.png)
 
 
 Figura 1 - Fluxograma de Ingestão de Dados
