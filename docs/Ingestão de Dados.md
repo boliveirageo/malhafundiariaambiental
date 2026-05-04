@@ -36,7 +36,7 @@ Os dados são organizados em quatro grupos principais:
 | Imóveis privados |INCRA (SNCI/SIGEF) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
 | Cadastro Ambiental Rural (CAR) | SICAR |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
-#### Grupo: Ativos Ambientais
+#### Ativos Ambientais
 | Dado | Fonte | URL |
 | :--- | :--- | :--- |
 | Área de preservação permanente (APP) | FBDS e SICAR |[https://geo.fbds.org.br/](https://geo.fbds.org.br/)|
