@@ -21,7 +21,7 @@ Caso contrário, a feição é descartada, por ser considerada inconsistente ou 
 Na etapa final, as classes são integradas respeitando a hierarquia fundiária:
 
 * Classes de maior prioridade são mantidas
- Classes de menor prioridade são recortadas em áreas de sobreposição
+* Classes de menor prioridade são recortadas em áreas de sobreposição
 
 ** **
 ## Resultados do Processo
