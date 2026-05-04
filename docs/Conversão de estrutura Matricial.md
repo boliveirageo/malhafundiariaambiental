@@ -8,6 +8,7 @@ Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquiza
 03. **Atribuição de valores de pixel:** Cada classe fundiária recebe um valor numérico correspondente ao seu nível hierárquico, permitindo sua diferenciação nas operações de álgebra de mapas.
 04. **Geração das camadas reclassificadas:** São geradas imagens raster para cada classe fundiária, nas quais o valor do pixel representa diretamente sua prioridade hierárquica.
 
+![Figura 1 - Fluxograma de Ingestão de Dados](figuras/reclassificacao_das_camadas_2.png)
 
 ### Tabela 3 - Cálculo da Hierarquização das camadas fundiárias
 | Classe Fundiária | Segurança Jurídica| Precisão Geométrica|Sobreposição|Estabilidade| Peso Global (AHP) | Nível Hierarquizado |
