@@ -9,7 +9,7 @@ Nesta etapa, os dados integrados no banco PostgreSQL passam por correções geom
 03. **Remoção de registros inativos e áreas especiais:** São excluídos imóveis com status “Cancelado” ou “Suspenso”, bem como categorias que possuem representação mais confiável em outras bases oficiais, como áreas especiais.
 04. **Exclusão de inconsistências de área:** Imóveis do CAR com área igual ou superior à área do município são removidos, evitando distorções associadas à grilagem digital.
 05. **Remoção de sobreposição:** Sobreposições são resolvidas por meio da priorização do registro mais recente e do ajuste espacial em relação às bases do INCRA (SIGEF/SNCI) e CAR. Pequenas propriedades são priorizadas em relação às grandes, com recorte das feições.
-06. **Rasterização:** Todas as camadas são convertidas para formato raster, permitindo a padronização espacial e a aplicação das etapas seguintes de análise.
+06. **Rasterização:** Todas as camadas são convertidas para formato raster com Pixel de 10 metros, compatível com escala 1:25.000, permitindo a padronização espacial e a aplicação das etapas seguintes de análise.
 
 
 ## Fluxograma 
