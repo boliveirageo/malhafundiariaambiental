@@ -1,4 +1,4 @@
-# 04 - Reclassificação das Camadas
+# 04. Reclassificação das Camadas
 
 Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquização definida pelo método AHP, atribuindo a cada classe um nível de prioridade que será utilizado na resolução de conflitos espaciais. Essa etapa transforma a hierarquia conceitual (pesos AHP) em valores numéricos aplicáveis à álgebra de mapas.
 
