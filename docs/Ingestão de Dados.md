@@ -1,40 +1,47 @@
-# Ingestão dos Dados 
+# 01 - Ingestão dos Dados 
 
-A primeira etapa consiste na coleta e organização sistemática das bases fundiárias de referência. O objetivo é realizar o download dos dados e integrá-los em um banco de dados **PostgreSQL**, criando um ambiente unificado para o processamento.
+Esta etapa consiste na aquisição, organização e armazenamento das principais bases fundiárias e ambientais utilizadas na construção da Malha Fundiária Ambiental. Os dados são obtidos a partir de fontes oficiais e integrados em um ambiente estruturado de banco de dados **PostgreSQL**, garantindo padronização e rastreabilidade. 
 
-## Bases de Dados Utilizadas
+## Estrutura de Dados
+
+Os dados são organizados em quatro grupos principais:
+
+* Territórios sociais e de proteção
+* Reforma agrária
+* Imóveis rurais privados
+* Ativos ambientais
+
+## Fontes de Dados
+
+#### Territórios Sociais e de Proteção
+| Dado | Fonte | URL |
+| :--- | :--- | :--- |
+| Terras Indígenas (homologadas e não homologadas)| FUNAI (WFS)|[https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP](https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP)|
+| Territórios Quilombolas (declarados e não declarados)| INCRA |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
+| Unidades de Conservação (Uso Sustentável e Proteção Integral) | MMA |[https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao](https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao)|
+| Áreas Militares | SFB ||[https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8](https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8)|
+| Massa d'águas | ANA |[https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about](https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about)|
 
 
-#### Grupo: Territórios Sociais e de Proteção
-| Fonte | URL dos Dados |
-| :--- | :--- |
-| Terras Indígenas (homologadas e não homologadas)|[https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP](https://geoserver.funai.gov.br/geoserver/Funai/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Funai%3Atis_poligonais&maxFeatures=10000&outputFormat=SHAPE-ZIP)|
-| Territórios Quilombolas (declarados e não declarados) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
-| Unidades de Conservação (Uso Sustentável e Proteção Integral) |[https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao](https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao)|
-| Áreas Militares |[https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8](https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8)|
-| Massa d'águas |[https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about](https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about)|
+#### Reforma Agrária
+| Dado | Fonte | URL |
+| :--- | :--- | :--- |
+| Assentamentos | INCRA |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
+| Glebas Públicas |INCRA (SNCI/SIGEF) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
+| Florestas Públicas Não Declaradas (FPND)| SFB |[https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8](https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8)|
 
-
-#### Grupo: Reforma Agrária
-| Fonte | URL dos Dados |
-| :--- | :--- |
-| Assentamentos |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
-| Glebas Públicas (SNCI e SIGEF Público) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
-| Florestas Públicas Não Declaradas (FPND) |[https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8](https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8)|
-
-#### Grupo: Imóveis Rurais Privados
-| Fonte | URL dos Dados |
-| :--- | :--- |
-| Imóveis privados SIGEF / SNCI (INCRA) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
-| Cadastro Ambiental Rural (CAR) |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
+#### Imóveis Rurais Privados
+| Dado | Fonte | URL |
+| :--- | :--- | :--- |
+| Imóveis privados |INCRA (SNCI/SIGEF) |[https://certificacao.incra.gov.br/csv_shp/export_shp.py](https://certificacao.incra.gov.br/csv_shp/export_shp.py)|
+| Cadastro Ambiental Rural (CAR) | SICAR |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
 #### Grupo: Ativos Ambientais
-| Fonte | URL dos Dados |
-| :--- | :--- |
-| Área de preservação permanente |[https://geo.fbds.org.br/](https://geo.fbds.org.br/)|
-| Reserva Legal |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
+| Dado | Fonte | URL |
+| :--- | :--- | :--- |
+| Área de preservação permanente (APP) | FBDS e SICAR |[https://geo.fbds.org.br/](https://geo.fbds.org.br/)|
+| Reserva Legal | SICAR |[https://consultapublica.car.gov.br/publico/imoveis/index](https://consultapublica.car.gov.br/publico/imoveis/index)|
 
-Estes dados são integrados e armazenados em um banco de dados PostgreSQL para garantir a integridade e facilitar o processamento subsequente
 ** **
 ## Fluxo de Trabalho
 
@@ -44,19 +51,7 @@ Estes dados são integrados e armazenados em um banco de dados PostgreSQL para g
 
 Figura 1 - Fluxograma de Ingestão de Dados
 
-*Modelo de Referência: Cartas da Terra (iGPP- Cartas da Terra, 2026)*
-
-** **
-## Requisito
-
-* Python versão 3.9 acima
-
-* QGIS Desktop versão 3.44 acima
-
-* GDAL 
-
-* Duckdb 
-
+A integração dessas bases constitui o ponto de partida para as etapas seguintes de processamento, onde são realizadas correções topológicas, resolução de sobreposições e integração com ativos ambientais.
 
 
   
