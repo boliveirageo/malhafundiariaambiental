@@ -11,9 +11,17 @@ Esta etapa é responsável por identificar áreas com conflito espacial — onde
 ** **
 ## Refinamento Vetorial
 
+Após a geração da malha fundiária em formato raster, cada classe é comparada com sua respectiva camada vetorial original (já tratada).
 
-Após a finalização da malha fundiária, cada classe foi segregada e submetida a um cálculo de média de cada valor de pixel em relação ao seu dado na estrutura vetorial. Estabeleceu-se que, caso a estrutura vetorial apresentasse uma cobertura de sobreposição acima de 10% em relação à mesma classe na estrutura matricial, o vetor seria mantido. Essa operação foi realizada para as 14 classes fundiárias visando preservar a originalidade da informação, visto que a conversão da malha matricial para vetor resultou em uma geometria serrilhada ("pixelizada").  O limiar de 10% foi utilizado para excluir vetores com ruídos.
-Para integrar todas as classes no formato vetorial, aplicou-se uma ordenação por peso: a classe de maior prioridade permaneceu intacta, enquanto as de menor peso foram recortadas em áreas sobrepostas.
+Para cada feição vetorial, calcula-se a proporção de pixels do raster que coincidem com a mesma classe.
+Se 10% ou mais da área da feição apresentar correspondência com a classe dominante no raster, o vetor original é mantido como representação final.
+
+Caso contrário, a feição é descartada, por ser considerada inconsistente ou resultado de ruído da rasterização.
+
+Na etapa final, as classes são integradas respeitando a hierarquia fundiária:
+
+* Classes de maior prioridade são mantidas
+ Classes de menor prioridade são recortadas em áreas de sobreposição
 
 ** **
 ## Resultados do Processo
