@@ -11,7 +11,7 @@ Nesta etapa, os dados brutos integrados no PostgreSQL passam por correções geo
 5. **Priorização Social:** Recorte delimitado a pequenas propriedades sobre as grande propriedades. Essa etapa é feita na base de dados do CAR e SIGEF/SNCI.
 
 ## Fluxograma 
-![Figura 2 - Fluxograma de Pré-processamento](figuras/pre_processamento.png)
+![Figura 2 - Fluxograma de Pré-processamento](figuras/pre_processamento_2.png)
 
 Figura 2 - Fluxograma de Pré-processamento
 
