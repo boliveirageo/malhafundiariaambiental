@@ -13,7 +13,7 @@ Acreditamos que a gestão territorial eficiente começa com dados confiáveis. Q
 ## Como é feito
 Da integração de dados ao produto territorial
 
-![Figura 4 - Fluxograma de Integração Ambiental](figuras/como_e_feito.png)
+![Figura 4 - Fluxograma de Integração Ambiental](figuras/como_e_feito_2.png)
 
 ## O que o dado permite
 
