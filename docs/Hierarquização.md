@@ -1,30 +1,29 @@
 # Hierarquização das camadas fundiárias
 
-## Sobre
-Esta fase identifica áreas com conflito espacial (onde dois ou mais polígonos coexistem) e define qual camada deve prevalecer na malha final.
+Esta etapa é responsável por identificar áreas com conflito espacial — onde dois ou mais polígonos de diferentes bases coexistem — e definir qual classe fundiária deve prevalecer na malha final.
 ** **
 
-## Método AHP (Processo Hierárquico Analítico)
-Para resolver sobreposições, utiliza-se o método multicritério **AHP**, que pondera as camadas com base em quatro critérios principais:
+## Método AHP (Analytic Hierarchy Process)
 
-1. **Segurança Jurídica:** Grau de respaldo legal e reconhecimento formal.
-2. **Precisão Geométrica:** Qualidade e acurácia espacial dos dados.
-3. **Sobreposição:** Capacidade de manter a integridade diante de conflitos.
-4. **Estabilidade do domínio:** Permanência e consolidação histórica da posse ou uso.
+A resolução das sobreposições é realizada por meio do método multicritério AHP (Analytic Hierarchy Process), que permite atribuir pesos relativos às diferentes camadas fundiárias com base em critérios técnicos.
 
-Os pesos aplicados nos critérios usou a escala de Saaty que varia entre 1 e 9, onde:
+Foram considerados quatro critérios principais:
+
+1. **Segurança Jurídica:** Grau de respaldo legal e reconhecimento formal da camada
+2. **Precisão Geométrica:** Qualidade e acurácia espacial dos dados
+3. **Sobreposição:** Robustez da camada diante de conflitos espaciais
+4. **Estabilidade do domínio:** Permanência e consolidação histórica da ocupação
+
+## Escala de Avaliação (Saaty)
+Os pesos foram definidos com base na escala de Saaty (1 a 9), utilizada para comparações pareadas:
 
 **Peso 1 - Importância Igual:** As duas atividades contribuem igualmente para o objetivo.
-
 **Peso 3 - Importância Moderada:** A experiência e o julgamento favorecem ligeiramente uma atividade sobre a outra.
-
 **Peso 5 - Importância Forte:** A experiência e o julgamento favorecem fortemente uma atividade sobre a outra.
-
 **Peso 7 - Importância Muito Forte:** Uma atividade é fortemente favorecida e sua dominância é demonstrada na prática.
-
 **Peso 9 - Importância Extrema:** A evidência favorecendo uma atividade sobre a outra é da ordem mais alta possível de afirmação.
 
-A tabela 1 mostras os pesos definidos por meio da escala de Saaty (1 a 9):
+## Matriz de Comparação dos Critérios
 
 ### Tabela 1: Matriz de Peso dos Critérios  
 | Critérios | Segurança Jurídica | Precisão Geométrica | Sobreposição | Estabilidade | 
@@ -34,6 +33,8 @@ A tabela 1 mostras os pesos definidos por meio da escala de Saaty (1 a 9):
 | Sobreposição | 1/5 | 1/3 | 1 | 3 |
 | Estabilidade | 1/7 | 1/5 | 1/3 | 1 |
 
+## Pesos Normalizados para cada camada
+A partir da normalização da matriz, foram obtidos os pesos finais de cada critério:
 
 ### Tabela 2: Matriz de Peso dos Critérios Normalizados 
 | Critérios | Segurança Jurídica | Precisão Geométrica | Sobreposição | Estabilidade | Média (Peso) | 
