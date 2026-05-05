@@ -9,20 +9,22 @@ Etapa final responsável por integrar os ativos ambientais à malha fundiária c
 01. **Incorporação de ativos ambientais:** São integradas as Áreas de Preservação Permanente (APPs), o uso e cobertura da terra e as Reservas Legais (RL) à malha fundiária.
 
     **APPs:**
+    
       - FBDS para todos os biomas, exceto Pampa e Pantanal  
       - CAR para Pampa e Pantanal (devido à ausência na FBDS)  
 
     **Reserva Legal:**
+    
       - Extraída exclusivamente do CAR (nível de imóvel)
 
-02. **Tratamento das APPs e RL:** APPs são agrupadas por classe de uso do solo, com remoção de polígonos residuais (slivers)
+3. **Tratamento das APPs e RL:** APPs são agrupadas por classe de uso do solo, com remoção de polígonos residuais (slivers)
 RL é agregada por código do imóvel (CAR)
 
-03. **Eliminação de sobreposição entre ativos:** É realizada a sobreposição entre APP e RL. Em caso de interseção, a APP é mantida e o excedente da RL é removido. Isso evita dupla contagem no cálculo de ativos e passivos ambientais.
+4. **Eliminação de sobreposição entre ativos:** É realizada a sobreposição entre APP e RL. Em caso de interseção, a APP é mantida e o excedente da RL é removido. Isso evita dupla contagem no cálculo de ativos e passivos ambientais.
 
-04. **Associação com a malha fundiária:** Os ativos ambientais são sobrepostos à malha fundiária. Cada ativo recebe o código da classe fundiária correspondente, permitindo identificar sua pertença territorial.
+5. **Associação com a malha fundiária:** Os ativos ambientais são sobrepostos à malha fundiária. Cada ativo recebe o código da classe fundiária correspondente, permitindo identificar sua pertença territorial.
 
-05. **Geração da malha fundiária ambiental:** Todas as camadas são integradas em uma base única, consolidando informações fundiárias e ambientais.
+6. **Geração da malha fundiária ambiental:** Todas as camadas são integradas em uma base única, consolidando informações fundiárias e ambientais.
 
 ## Produtos Gerados
 
