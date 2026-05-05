@@ -7,7 +7,10 @@ Esta etapa é responsável por identificar áreas com conflito espacial — onde
 
 01. **Agregação matricial:** A consolidação das camadas é realizada por meio de álgebra de mapas, aplicando-se uma operação de mínimo pixel a pixel entre todas as imagens raster. Como os valores dos pixels representam a hierarquia fundiária, o menor valor corresponde à classe de maior prioridade, sendo selecionado para compor a malha final.
 02. **Geração da malha integrada:** O resultado da agregação é um único raster contínuo, no qual cada pixel representa a classe fundiária dominante, sem sobreposições ou lacunas.
-   
+
+** **
+
+![Figura 1 - Fluxograma de Ingestão de Dados](figuras/analise_sobreposicao_2.png)
 ** **
 ## Refinamento Vetorial
 
