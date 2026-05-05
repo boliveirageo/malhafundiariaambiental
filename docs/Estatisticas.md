@@ -2,6 +2,8 @@
 
 Etapa final responsável por integrar os ativos ambientais à malha fundiária consolidada, resultando em uma base única que associa estrutura territorial, uso da terra e informações ambientais, permitindo análises em escala nacional.
 ** **
+[Acessar visualização interativa](https://flourish-user-preview.com/28842321/KLxywa8SPPlfyxAQGYmCmq35ccqrFpEGHLGAR_ytH4ChlmCJzjxmDF1N4TZUaX7w/)
+
 ![Figura 4 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental_2.png)
 
 ## Como Funciona
