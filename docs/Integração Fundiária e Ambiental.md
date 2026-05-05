@@ -34,6 +34,3 @@ O processo resulta em três subprodutos principais:
 
  
 
-![Figura 4 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental.png)
-
-
