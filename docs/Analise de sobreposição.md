@@ -16,9 +16,9 @@ Esta etapa é responsável por identificar áreas com conflito espacial — onde
 
 Após a geração da malha fundiária em formato raster, cada feição vetorial original é comparada com a classe dominante na malha final.
 
-Se mais de 10% da área da feição coincidir com a mesma classe no raster, o vetor é mantido e ajustado, sendo recortado conforme os limites definidos pela malha fundiária ambiental.
+Se mais de 10% da área da feição coincidir com a mesma classe no raster, o vetor é mantido e ajustado, sendo recortado conforme os limites definidos pela malha fundiária ambiental. 
 
-Caso contrário, a feição é descartada por não apresentar correspondência suficiente.
+Caso contrário, a feição é descartada por não apresentar correspondência suficiente, gerando o vazio fundiário.
 
 Na etapa final, as classes são integradas respeitando a hierarquia fundiária:
 
