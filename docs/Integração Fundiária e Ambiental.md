@@ -8,10 +8,10 @@ Etapa final responsável por integrar os ativos ambientais à malha fundiária c
 
 01. **Incorporação de ativos ambientais:** São integradas as Áreas de Preservação Permanente (APPs), o uso e cobertura da terra e as Reservas Legais (RL) à malha fundiária.
 
-*APPs:
+* APPs:
 ** FBDS para todos os biomas, exceto Pampa e Pantanal
 ** CAR para Pampa e Pantanal (devido à ausência na FBDS)
-*Reserva Legal:
+* Reserva Legal:
 ** Extraída exclusivamente do CAR (nível de imóvel)
 
 02. **Tratamento das APPs e RL:** APPs são agrupadas por classe de uso do solo, com remoção de polígonos residuais (slivers)
