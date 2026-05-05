@@ -1,26 +1,38 @@
-# Integração da Malha Fundiária e Ambiental 
+# 06. Integração Ambiental 
 
-## Sobre
-A etapa final integra os ativos ambientais à malha fundiária consolidada, gerando o produto final para análises territoriais de escala nacional.
+Etapa final responsável por integrar os ativos ambientais à malha fundiária consolidada, resultando em uma base única que associa estrutura territorial, uso da terra e informações ambientais, permitindo análises em escala nacional.
 ** **
+![Figura 4 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental_2.png)
 
-## Integração de Áreas de Preservação Permanente (APP)
-A etapa final integra os ativos ambientais compostos pelas Áreas de Preservação Permanente (APPs), seu uso e cobertura da terra, e a Reserva Legal de cada imóvel — à malha consolidada. A fonte de dados varia conforme o bioma: para todos os biomas, exceto Pampa e Pantanal, as APPs são extraídas da FBDS (Fundação Brasileira de Desenvolvimento Sustentável); já para os biomas Pampa e Pantanal, utilizam-se dados do CAR, devido à ausência destas informações na FBDS. Os dados de Reserva Legal são extraídos exclusivamente do CAR, por ser a única fonte disponível por imóvel.
-O produto final da metodologia consiste em dois (02) subprodutos principais: 
-1. **Malha de Classe Fundiária Final (formatos vetorial e matricial)** 
-2. **Malha da Quantidade de Sobreposições de Classes (formato matricial)**
+## Como Funciona
 
-Os procedimentos realizados nas APPs consistiram no agrupamento por classe de uso do solo, eliminando-se polígonos residuais (slivers). A Reserva Legal, por sua vez, foi agrupada pelo código do imóvel no CAR. Após a consolidação dos ativos ambientais, realizou-se uma análise de sobreposição entre as APPs e as Reservas Legais. Nos casos de intersecção, manteve-se a área da APP e removeu-se o excedente da Reserva Legal, visando evitar a duplicidade de áreas no cálculo do balanço de passivos ambientais. Posteriormente, executou-se nova análise de sobreposição entre os ativos ambientais e as camadas fundiárias; onde houvesse sobreposição, o ativo recebia o código da respectiva camada fundiária, identificando sua pertença. Por fim, todas as camadas foram unificadas em um único arquivo, denominado 'malha fundiária ambiental'.
-** **
+01. **Incorporação de ativos ambientais:** São integradas as Áreas de Preservação Permanente (APPs), o uso e cobertura da terra e as Reservas Legais (RL) à malha fundiária.
+
+*APPs:
+** FBDS para todos os biomas, exceto Pampa e Pantanal
+** CAR para Pampa e Pantanal (devido à ausência na FBDS)
+*Reserva Legal:
+** Extraída exclusivamente do CAR (nível de imóvel)
+
+02. **Tratamento das APPs e RL:** APPs são agrupadas por classe de uso do solo, com remoção de polígonos residuais (slivers)
+RL é agregada por código do imóvel (CAR)
+
+03. **Eliminação de sobreposição entre ativos:** É realizada a sobreposição entre APP e RL. Em caso de interseção, a APP é mantida e o excedente da RL é removido. Isso evita dupla contagem no cálculo de ativos e passivos ambientais.
+
+04. **Associação com a malha fundiária:** Os ativos ambientais são sobrepostos à malha fundiária. Cada ativo recebe o código da classe fundiária correspondente, permitindo identificar sua pertença territorial.
+
+05. **Geração da malha fundiária ambiental:** Todas as camadas são integradas em uma base única, consolidando informações fundiárias e ambientais.
 
 ## Produtos Gerados
-O algoritmo disponibiliza três subprodutos principais:
-1. **Malha de Classe Fundiária Final:** Estrutura vetorial (Hard Class).
-2. **Malha de Classe Fundiária Final:** Estrutura matricial (Hard Class).
-3. **Malha de Sobreposições:** Estrutura matricial (Quantidade de sobreposições).
+
+O processo resulta em três subprodutos principais:
+
+* Malha de Classe Fundiária Final (vetorial): Estrutura vetorial consolidada (hard class)
+* Malha de Classe Fundiária Final (matricial): Representação raster da malha fundiária (hard class)
+* Malha de Sobreposições (matricial): Raster com a quantidade de sobreposições por pixel
+
  
 
 ![Figura 4 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental.png)
 
-Figura 4 - Fluxograma de Integração Ambiental
 
