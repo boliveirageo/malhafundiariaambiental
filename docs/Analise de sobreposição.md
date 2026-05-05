@@ -1,4 +1,4 @@
-# 05 - Análise de Sobreposição
+# 05. Análise de Sobreposição
 
 Esta etapa é responsável por identificar áreas com conflito espacial — onde duas ou mais camadas fundiárias coexistem — e definir, de forma objetiva, qual classe deve prevalecer na malha final.
 ** **
@@ -11,12 +11,11 @@ Esta etapa é responsável por identificar áreas com conflito espacial — onde
 ** **
 ## Refinamento Vetorial
 
-Após a geração da malha fundiária em formato raster, cada classe é comparada com sua respectiva camada vetorial original (já tratada).
+Após a geração da malha fundiária em formato raster, cada feição vetorial original é comparada com a classe dominante na malha final.
 
-Para cada feição vetorial, calcula-se a proporção de pixels do raster que coincidem com a mesma classe.
-Se 10% ou mais da área da feição apresentar correspondência com a classe dominante no raster, o vetor original é mantido como representação final.
+Se mais de 10% da área da feição coincidir com a mesma classe no raster, o vetor é mantido e ajustado, sendo recortado conforme os limites definidos pela malha fundiária ambiental.
 
-Caso contrário, a feição é descartada, por ser considerada inconsistente ou resultado de ruído da rasterização.
+Caso contrário, a feição é descartada por não apresentar correspondência suficiente.
 
 Na etapa final, as classes são integradas respeitando a hierarquia fundiária:
 
