@@ -26,7 +26,7 @@ Os dados são organizados em quatro grupos principais:
 | Unidades de Conservação (Uso Sustentável e Proteção Integral) | MMA |[https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao](https://dados.gov.br/dados/conjuntos-dados/unidadesdeconservacao)|
 | Áreas Militares | SFB |[https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8](https://mapas.florestal.gov.br/portal/home/item.html?id=7d477c1d52eb41028a9f0e04036206b8)|
 | Massa d'águas | ANA |[https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about](https://dadosabertos.ana.gov.br/datasets/4c606c38ee534b84bffe70ca6c8552c6_0/about)|
-| Malha urbana | IBGE | |
+| Malha urbana (Áreas Urbanizadas) | IBGE |[https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15789-areas-urbanizadas.html?=&t=downloads](https://www.ibge.gov.br/geociencias/cartas-e-mapas/redes-geograficas/15789-areas-urbanizadas.html?=&t=downloads) |
 
 
 #### Reforma Agrária
