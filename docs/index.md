@@ -30,6 +30,6 @@ Para parcerias, dúvidas acadêmicas ou sugestões, entre em contato pelo e-mail
 ## Histórico de versões
 
 * v 1.0
-    * Construção da Malha Fundiária Ambiental para o estado de Goiás. 
+    * Construção da Malha Fundiária Ambiental Brasil. 
 
 
