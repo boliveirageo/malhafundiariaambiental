@@ -56,12 +56,11 @@ Para validar a matriz de comparação pareada e garantir que os julgamentos téc
 
 O primeiro passo consiste em multiplicar a matriz original pelo vetor de pesos (médias) para obter o vetor de consistência. A soma desses valores nos fornece o auto-vetor máximo ($\lambda_{max}$).
 
-
 Para esta matriz de ordem $n = 4$:
 
 * **$\lambda_{max}$ calculado:** 4,11
 
-Onde: n = Quantidade de critérios Analisados
+Onde: n = Quantidade de critérios Analisados.
 ### 2. Índice de Consistência (IC)
 
 O IC mede o desvio da consistência utilizando a fórmula:
