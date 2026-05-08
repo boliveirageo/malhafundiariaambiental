@@ -15,17 +15,17 @@ Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquiza
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
 | Massa d'água | 9 | 9 | 9 | 9 | 9,00 | 1 |
 | Malha Urbana | 9 | 9 | 9 | 9 | 9,00 | 2 |
-| TI Homologada | 9 | 8 | 7 | 9 | 8,52 | 3 |
-| UC Proteção Integral | 9 | 8 | 7 | 9 | 8,52 | 4 |
-| Área Militar | 8 | 8 | 9 | 9 | 8,18 | 5 |
-| Imóvel Privado (SIGEF/SNCI) | 8 | 9 | 6 | 7 | 7,86 | 6 |
-| Assentamento | 7 | 7 | 6 | 6 | 6,76 | 7 |
-| Glebas Públicas - Floresta Pública Não Destinada | 6 | 7 | 5 | 7 | 6,20 | 8 |
-| UC Uso Sustentável | 6 | 6 | 6 | 7 | 6,06 | 9 |
-| Glebas Públicas | 6 | 6 | 4 | 5 | 5,70 | 10 |
-| Quilombola Declarado | 5 | 6 | 4 | 6 | 5,20 | 11 |
+| TI Homologada | 9 | 5 | 9 | 9 | 7,96 | 3 |
+| UC Proteção Integral | 9 | 5 | 8 | 8 | 7,78 | 4 |
+| Área Militar | 9 | 4 | 9 | 9 | 7,70 | 5 |
+| Imóvel Privado (SIGEF/SNCI) | 7 | 9 | 7 | 7 | 7,52 | 6 |
+| Assentamento | 7 | 5 | 5 | 6 | 6,18 | 7 |
+| Glebas Públicas - Floresta Pública Não Destinada | 5 | 5 | 5 | 5 | 5,00 | 8 |
+| UC Uso Sustentável | 5 | 5 | 4 | 5 | 4,88 | 9 |
+| Glebas Públicas | 5 | 5 | 4 | 4 | 4,82 | 10 |
+| Quilombola Declarado | 5 | 4 | 4 | 4 | 4,56 | 11 |
 | TI Não Homologada | 4 | 4 | 3 | 4 | 3,88 | 12 |
-| Quilombola Não Declarado | 3 | 4 | 3 | 4 | 3,32 | 13 |
+| Quilombola Não Declarado | 4 | 4 | 3 | 4 | 3,88 | 13 |
 | Imóvel Privado (CAR) sem sobreposição | 2 | 4 | 1 | 3 | 2,46 | 14 |
 | Imóvel Privado (CAR) com sobreposição| 2 | 4 | 1 | 3 | 2,46 | 15 |
 
