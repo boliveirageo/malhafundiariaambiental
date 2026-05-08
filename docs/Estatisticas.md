@@ -4,7 +4,7 @@ Etapa final responsável por integrar os ativos ambientais à malha fundiária c
 ** **
 [Acessar visualização interativa](https://flourish-user-preview.com/28842321/KLxywa8SPPlfyxAQGYmCmq35ccqrFpEGHLGAR_ytH4ChlmCJzjxmDF1N4TZUaX7w/)
 
-![Figura 4 - Fluxograma de Integração Ambiental](figuras/integracao_ambiental_2.png)
+![Figura 4 - Fluxograma de Integração Ambiental](figuras/estatistica1.png)
 
 ## Como Funciona
 
