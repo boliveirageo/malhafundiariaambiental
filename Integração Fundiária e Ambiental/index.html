@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Bernard Silva de Oliveira" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Integração Fundiária e Ambiental - Documentação - Malha Fundiária Ambiental</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Integra\u00e7\u00e3o Fundi\u00e1ria e Ambiental";
+        var mkdocs_page_input_path = "Integra\u00e7\u00e3o Fundi\u00e1ria e Ambiental.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentação - Malha Fundiária Ambiental
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ingest%C3%A3o%20de%20Dados/">Ingestão de Dados</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Pr%C3%A9%20processamento%20dos%20dados/">Pré-processamento</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Hierarquiza%C3%A7%C3%A3o/">Hierarquização</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Convers%C3%A3o%20de%20estrutura%20Matricial/">Conversão de estrutura Matricial</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Analise%20de%20sobreposi%C3%A7%C3%A3o/">Analise de sobreposição</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Integração Fundiária e Ambiental</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#como-funciona">Como Funciona</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#produtos-gerados">Produtos Gerados</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Estatisticas/">Visualização de Dados</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentação - Malha Fundiária Ambiental</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Integração Fundiária e Ambiental</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="06-integracao-ambiental">06. Integração Ambiental</h1>
+<p>Etapa final responsável por integrar os ativos ambientais à malha fundiária consolidada, resultando em uma base única que associa estrutura territorial, uso da terra e informações ambientais, permitindo análises em escala nacional.</p>
+<hr />
+<p><img alt="Figura 4 - Fluxograma de Integração Ambiental" src="../figuras/integracao_ambiental_2.png" /></p>
+<h2 id="como-funciona">Como Funciona</h2>
+<ol>
+<li>
+<p><strong>Incorporação de ativos ambientais:</strong> São integradas as Áreas de Preservação Permanente (APPs), o uso e cobertura da terra e as Reservas Legais (RL) à malha fundiária.</p>
+<p><strong>APPs:</strong></p>
+<ul>
+<li>FBDS para todos os biomas, exceto Pampa e Pantanal  </li>
+<li>CAR para Pampa e Pantanal (devido à ausência na FBDS)  </li>
+</ul>
+<p><strong>Reserva Legal:</strong></p>
+<ul>
+<li>Extraída exclusivamente do CAR (nível de imóvel)</li>
+</ul>
+</li>
+<li>
+<p><strong>Tratamento das APPs e RL:</strong> APPs são agrupadas por classe de uso do solo, com remoção de polígonos residuais (slivers)
+RL é agregada por código do imóvel (CAR)</p>
+</li>
+<li>
+<p><strong>Eliminação de sobreposição entre ativos:</strong> É realizada a sobreposição entre APP e RL. Em caso de interseção, a APP é mantida e o excedente da RL é removido. Isso evita dupla contagem no cálculo de ativos e passivos ambientais.</p>
+</li>
+<li>
+<p><strong>Associação com a malha fundiária:</strong> Os ativos ambientais são sobrepostos à malha fundiária. Cada ativo recebe o código da classe fundiária correspondente, permitindo identificar sua pertença territorial.</p>
+</li>
+<li>
+<p><strong>Geração da malha fundiária ambiental:</strong> Todas as camadas são integradas em uma base única, consolidando informações fundiárias e ambientais.</p>
+</li>
+</ol>
+<h2 id="produtos-gerados">Produtos Gerados</h2>
+<p>O processo resulta em três subprodutos principais:</p>
+<ul>
+<li>Malha de Classe Fundiária Final (vetorial): Estrutura vetorial consolidada (hard class)</li>
+<li>Malha de Classe Fundiária Final (matricial): Representação raster da malha fundiária (hard class)</li>
+<li>Malha de Sobreposições (matricial): Raster com a quantidade de sobreposições por pixel</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Analise%20de%20sobreposi%C3%A7%C3%A3o/" class="btn btn-neutral float-left" title="Analise de sobreposição"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Estatisticas/" class="btn btn-neutral float-right" title="Visualização de Dados">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Analise%20de%20sobreposi%C3%A7%C3%A3o/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Estatisticas/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

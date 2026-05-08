@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Bernard Silva de Oliveira" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Pré-processamento - Documentação - Malha Fundiária Ambiental</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Pr\u00e9-processamento";
+        var mkdocs_page_input_path = "Pr\u00e9 processamento dos dados.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Documentação - Malha Fundiária Ambiental
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Ingest%C3%A3o%20de%20Dados/">Ingestão de Dados</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Pré-processamento</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#como-funciona">Como Funciona</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#fluxograma">Fluxograma</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exemplo-de-inconsistencias-de-area">Exemplo de inconsistências de área</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Hierarquiza%C3%A7%C3%A3o/">Hierarquização</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Convers%C3%A3o%20de%20estrutura%20Matricial/">Conversão de estrutura Matricial</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Analise%20de%20sobreposi%C3%A7%C3%A3o/">Analise de sobreposição</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Integra%C3%A7%C3%A3o%20Fundi%C3%A1ria%20e%20Ambiental/">Integração Fundiária e Ambiental</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Estatisticas/">Visualização de Dados</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Documentação - Malha Fundiária Ambiental</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Pré-processamento</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="02-pre-processamento-dos-dados">02. Pré-processamento dos dados</h1>
+<p>Nesta etapa, os dados integrados no banco PostgreSQL passam por correções geométricas e filtragens, com o objetivo de garantir consistência espacial, integridade das feições e confiabilidade nos processos subsequentes.</p>
+<h2 id="como-funciona">Como Funciona</h2>
+<ol>
+<li><strong>Correção Topológica e Reprojeção:</strong> São eliminadas inconsistências geométricas e todas as camadas são reprojetadas para um sistema métrico padrão (ESRI:102033 — Albers Equal Area Conic).</li>
+<li><strong>Remoção de duplicidades:</strong> Registros duplicados são identificados e removidos, mantendo-se o registro mais recente</li>
+<li><strong>Remoção de registros inativos e áreas especiais:</strong> São excluídos imóveis com status “Cancelado” ou “Suspenso”, bem como categorias que possuem representação mais confiável em outras bases oficiais, como áreas especiais.</li>
+<li><strong>Exclusão de inconsistências de área:</strong> Imóveis do CAR com área igual ou superior à área do município são removidos, evitando distorções associadas à grilagem digital.</li>
+<li><strong>Remoção de sobreposição:</strong> Sobreposições são resolvidas por meio da priorização do registro mais recente e do ajuste espacial em relação às bases do INCRA (SIGEF/SNCI) e CAR. Pequenas propriedades são priorizadas em relação às grandes, com recorte das feições.</li>
+<li><strong>Rasterização:</strong> Todas as camadas são convertidas para formato raster com Pixel de 10 metros, compatível com escala 1:25.000, permitindo a padronização espacial e a aplicação das etapas seguintes de análise.</li>
+</ol>
+<h2 id="fluxograma">Fluxograma</h2>
+<p><img alt="Figura 2 - Fluxograma de Pré-processamento" src="../figuras/pre_processamento_2.png" /></p>
+<p>Figura 2 - Fluxograma de Pré-processamento</p>
+<h2 id="exemplo-de-inconsistencias-de-area">Exemplo de inconsistências de área</h2>
+<p><img alt="Figura 3 - Exemplo de Grilagem Digital" src="../figuras/grilagem_digital.png" /></p>
+<p>Figura 3 - Exemplo de inconsistências de área</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Ingest%C3%A3o%20de%20Dados/" class="btn btn-neutral float-left" title="Ingestão de Dados"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Hierarquiza%C3%A7%C3%A3o/" class="btn btn-neutral float-right" title="Hierarquização">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Ingest%C3%A3o%20de%20Dados/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Hierarquiza%C3%A7%C3%A3o/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
