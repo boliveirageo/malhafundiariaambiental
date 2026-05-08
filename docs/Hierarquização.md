@@ -25,6 +25,7 @@ Os pesos foram definidos com base na escala de Saaty (1 a 9), utilizada para com
 * **Peso 5 - Importância Forte:** A experiência e o julgamento favorecem fortemente uma atividade sobre a outra.
 * **Peso 7 - Importância Muito Forte:** Uma atividade é fortemente favorecida e sua dominância é demonstrada na prática.
 * **Peso 9 - Importância Extrema:** A evidência favorecendo uma atividade sobre a outra é da ordem mais alta possível de afirmação.
+
 Obs: Os valores 2, 4, 6 e 8 são usados quando há duvida na definição efetiva no valor do peso.
 ## Matriz de Comparação dos Critérios
 
