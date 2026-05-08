@@ -61,7 +61,7 @@ Para esta matriz de ordem $n = 4$:
 
 * **$\lambda_{max}$ calculado:** 4,11
 
-
+Onde: n = Quantidade de critérios Analisados
 ### 2. Índice de Consistência (IC)
 
 O IC mede o desvio da consistência utilizando a fórmula:
