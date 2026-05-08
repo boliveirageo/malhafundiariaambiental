@@ -47,7 +47,7 @@ A partir da normalização da matriz, foram obtidos os pesos finais de cada crit
 | Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
 | Estabilidade | 0,084 | 0,044 | 0,035 | 0,063 | 0,06 |
 
-## Análise de Consistência (Razão de Consistência
+## Análise de Consistência (Razão de Consistência)
 
 Para validar a matriz de comparação pareada e garantir que os julgamentos técnicos foram coerentes, aplicamos o cálculo da Razão de Consistência (RC). Segundo Saaty, um **RC < 0,10** (10%) indica que a matriz é consistente.
 
