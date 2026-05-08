@@ -82,7 +82,7 @@ A Razão de Consistência é obtida comparando o IC com um Índice Aleatório (I
 $$RC = \frac{IC}{IA} \Rightarrow RC = \frac{0,0366}{0,90} = 0,0407$$
 
 
-> [!IMPORTANT]
+[!IMPORTANT]
 
 > **Resultado:** O valor de **RC é 4,07%**. Como este valor é inferior a 10%, a matriz de pesos é considerada **consistente** e estatisticamente válida para a hierarquização das camadas fundiárias
 ** **
