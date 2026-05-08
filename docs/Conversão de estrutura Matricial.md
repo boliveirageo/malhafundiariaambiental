@@ -25,7 +25,7 @@ Nesta etapa, as camadas fundiárias são reclassificadas com base na hierarquiza
 | Glebas Públicas | 5 | 5 | 4 | 4 | 4,82 | 10 |
 | Quilombola Declarado | 5 | 4 | 4 | 4 | 4,56 | 11 |
 | TI Não Homologada | 4 | 4 | 3 | 4 | 3,88 | 12 |
-| Quilombola Não Declarado | 4 | 4 | 3 | 4 | 3,88 | 13 |
+| Quilombola Não Declarado | 3 | 4 | 3 | 4 | 3,32 | 13 |
 | Imóvel Privado (CAR) sem sobreposição | 2 | 4 | 1 | 3 | 2,46 | 14 |
 | Imóvel Privado (CAR) com sobreposição| 2 | 4 | 1 | 3 | 2,46 | 15 |
 
