@@ -61,15 +61,15 @@ O IC mede o desvio da consistência utilizando a fórmula:
 $$IC = \frac{\lambda_{max} - n}{n - 1}$$
 
 Aplicando os valores:
-$$IC = \frac{4,11 - 4}{3} = \frac{0,121}{3} = 0,0352$$
+$$IC = \frac{4,11 - 4}{3} = \frac{0,11}{3} = 0,0366$$
 
 ### 3. Razão de Consistência (RC)
 A Razão de Consistência é obtida comparando o IC com um Índice Aleatório (IA) tabelado para matrizes de mesma ordem (Para $n=4$, $IA = 0,90$).
 
-$$RC = \frac{IC}{IA} \Rightarrow RC = \frac{0,0352}{0,90} = 0,0392$$
+$$RC = \frac{IC}{IA} \Rightarrow RC = \frac{0,0366}{0,90} = 0,0407$$
 
 > [!IMPORTANT]
-> **Resultado:** O valor de **RC é 4,47%**. Como este valor é inferior a 10%, a matriz de pesos é considerada **consistente** e estatisticamente válida para a hierarquização das camadas fundiárias.
+> **Resultado:** O valor de **RC é 4,07%**. Como este valor é inferior a 10%, a matriz de pesos é considerada **consistente** e estatisticamente válida para a hierarquização das camadas fundiárias.
 ** **
 
 
