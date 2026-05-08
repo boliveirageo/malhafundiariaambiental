@@ -47,26 +47,33 @@ A partir da normalização da matriz, foram obtidos os pesos finais de cada crit
 | Sobreposição | 0,120 | 0,073 | 0,107 | 0,188 | 0,12 |
 | Estabilidade | 0,084 | 0,044 | 0,035 | 0,063 | 0,06 |
 
-## Análise de Consistência (Razão de Consistência
+## Análise de Consistência (Razão de Consistência)
+
 Para validar a matriz de comparação pareada e garantir que os julgamentos técnicos foram coerentes, aplicamos o cálculo da Razão de Consistência (RC). Segundo Saaty, um **RC < 0,10** (10%) indica que a matriz é consistente.
 
-### 1. Cálculo do Vetor de Prioridades e Auto-vetor ($\lambda_{max}$)
-O primeiro passo consiste em multiplicar a matriz original pelo vetor de pesos (médias) para obter o vetor de consistência. A soma desses valores nos fornece o auto-vetor máximo ($\lambda_{max}$).
+### 1. Cálculo do Vetor de Prioridades e Auto-vetor \(\lambda_{max}\)
+O primeiro passo consiste em multiplicar a matriz original pelo vetor de pesos (médias) para obter o vetor de consistência. A soma desses valores nos fornece o auto-vetor máximo (\(\lambda_{max}\)).
 
-Para esta matriz de ordem $n = 4$:
-* **$\lambda_{max}$ calculado:** 4,11
+Para esta matriz de ordem \(n = 4\):
+* **\(\lambda_{max}\) calculado:** 4,11
 
 ### 2. Índice de Consistência (IC)
 O IC mede o desvio da consistência utilizando a fórmula:
-$$IC = \frac{\lambda_{max} - n}{n - 1}$$
+\[
+IC = \frac{\lambda_{max} - n}{n - 1}
+\]
 
 Aplicando os valores:
-$$IC = \frac{4,11 - 4}{3} = \frac{0,11}{3} = 0,0366$$
+\[
+IC = \frac{4,11 - 4}{3} = \frac{0,11}{3} = 0,0366
+\]
 
 ### 3. Razão de Consistência (RC)
-A Razão de Consistência é obtida comparando o IC com um Índice Aleatório (IA) tabelado para matrizes de mesma ordem (Para $n=4$, $IA = 0,90$).
+A Razão de Consistência é obtida comparando o IC com um Índice Aleatório (IA) tabelado para matrizes de mesma ordem (Para \(n=4\), \(IA = 0,90\)).
 
-$$RC = \frac{IC}{IA} \Rightarrow RC = \frac{0,0366}{0,90} = 0,0407$$
+\[
+RC = \frac{IC}{IA} \Rightarrow RC = \frac{0,0366}{0,90} = 0,0407
+\]
 
 > [!IMPORTANT]
 > **Resultado:** O valor de **RC é 4,07%**. Como este valor é inferior a 10%, a matriz de pesos é considerada **consistente** e estatisticamente válida para a hierarquização das camadas fundiárias.
